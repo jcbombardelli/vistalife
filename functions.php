@@ -1,7 +1,7 @@
 <?php
 /**
  * @package WordPress
- * @subpackage WVSC
+ * @subpackage YOUR_THEME
  */
 
-automatic_feed_links();
+add_theme_support('automatic-feed-links');

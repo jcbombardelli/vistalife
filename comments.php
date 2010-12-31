@@ -1,7 +1,7 @@
 <?php
 /**
  * @package WordPress
- * @subpackage WVSC
+ * @subpackage YOUR_THEME
  */
 
 // Do not delete these lines

@@ -1,23 +1,19 @@
 <?php
 /**
  * @package WordPress
- * @subpackage WVSC
+ * @subpackage YOUR_THEME
+ *
+ * Template Name: Links
+ *
  */
 
-/*
-Template Name: Links
-*/
-?>
-
-<?php get_header(); ?>
-
-<div id="content" class="widecolumn">
+get_header(); ?>
 
 <h2>Links:</h2>
+
 <ul>
-<?php wp_list_bookmarks(); ?>
+	<?php wp_list_bookmarks(); ?>
 </ul>
 
-</div>
-
-<?php get_footer(); ?>
+<?php 
+get_footer(); ?>
