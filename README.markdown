@@ -1,7 +1,11 @@
 #  Blank WordPress Theme
 
+Created by Matt Vickers (http://envexlabs.com)
+
 ## Usage
 
-*Install into WordPress
-*Style.
-*Done.
+<ul>
+	<li>Install into WordPress</li>
+	<li>Style.</li>
+	<li>Done.</li>
+</ul>
