@@ -34,7 +34,7 @@
 	<div id="header">
 	
 		<?php
-		if(is_home() || is_front_page();): ?>
+		if(is_home() || is_front_page()): ?>
 			<h1 id="logo"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
 		<?php
 		else: ?>
