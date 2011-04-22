@@ -1,48 +1,23 @@
-/*
-
-	This was taken from the HTML5 Boiler Plate
-	
-	http://html5boilerplate.com/
-	https://github.com/paulirish/html5-boilerplate
-	
-	Remap jQuery to $
-
-*/
-
 (function($){
 
+	/*
+		
+		Slider
 
+	*/
+
+	if($('#slider').length){
+		
+		$('#slider').nivoSlider({
+	        effect: 'random',
+	        slices: 15,
+	        animSpeed: 500,
+	        pauseTime: 3000,
+	        directionNav: true,
+	        directionNavHide: true,
+	        controlNav: true
+	    });
+		
+	}
 
 })(this.jQuery);
-
-/*
-
-	New console.log alternative that doesn't make IE poop it's pants
-
-	usage: log('inside coolFunc',this,arguments);
-	paulirish.com/2009/log-a-lightweight-wrapper-for-consolelog/
-
-*/
-
-window.log = function(){
-	log.history = log.history || [];   // store logs to an array for reference
-	log.history.push(arguments);
-	if(this.console){
-		console.log( Array.prototype.slice.call(arguments) );
-	}
-};
-
-/*
-
-	catch all document.write() calls
-
-*/
-
-(function(doc){
-	var write = doc.write;
-	doc.write = function(q){ 
-		log('document.write(): ',arguments); 
-		if (/docwriteregexwhitelist/.test(q)) write.apply(doc,arguments);  
-	};
-})(document);
-
