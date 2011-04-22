@@ -39,3 +39,22 @@ img.alignright{
 	float: right;
 	margin: 0 0 15px 15px;
 }
+
+/*
+	
+	Slider
+
+*/
+
+#slider {
+    position: relative;
+    width: 618px;
+    height: 246px;
+}
+
+#slider img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
