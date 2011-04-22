@@ -15,9 +15,7 @@
 		
 		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 		
-		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/inc/css/reset.css" type="text/css" media="screen" />
-		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/inc/css/default.css" type="text/css" media="screen" />
-		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/inc/css/main.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/inc/css/compressor.php" type="text/css" media="screen" />
 		
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
 		
