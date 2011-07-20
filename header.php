@@ -16,9 +16,7 @@
 		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 		
 		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/inc/css/compressor.php" type="text/css" media="screen" />
-		
-		<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
-		
+				
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 		
 		<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
