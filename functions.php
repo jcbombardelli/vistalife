@@ -38,3 +38,41 @@ function envex_scripts(){
 }
 
 add_action('init', 'envex_scripts');
+
+/*
+
+	The functions below are elements I use a lot, but not
+	for every project. To use them, simply uncomment them!
+
+*/
+
+/*
+
+	Menus
+
+
+*/
+
+/*
+
+register_nav_menus(array(
+	'main' => 'Main Menu',
+	'footer' => 'Footer Menu'
+));
+
+*/
+
+/*
+
+	Widgets
+	
+*/
+
+/*
+
+register_sidebar(array(
+	'name' => '',
+	'id'  => ''
+));
+
+*/
