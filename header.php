@@ -5,53 +5,35 @@
  */
 ?>
 
-<!doctype html>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie7" <?php language_attributes(); ?>> <![endif]-->
+<!--[if IE 7]>         <html class="no-js ie7" <?php language_attributes(); ?>> <![endif]-->
+<!--[if IE 8]>         <html class="no-js ie8" <?php language_attributes(); ?>> <![endif]-->
+<!--[if IE 9]>         <html class="no-js ie9" <?php language_attributes(); ?>> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
 
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-	<head profile="http://gmpg.org/xfn/11">
-	
-		<meta charset="utf-8">
-		
-		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
-		
-		<!-- 
-		
-			less.js is only used for dev.
-			
-			You can remove line 26 once the site is ready to go production.
-			
-			You will also remove the less.js script on line 32 becauase
-			you'll be compiling all the less files into one nice css file
-			
-		-->
-		
-		<script type="text/javascript"> less = { env: 'development' }; </script>
-		
-		<link rel="stylesheet/less" type="text/css" href="<?php bloginfo('template_url'); ?>/inc/css/main.less">
-		<script src="https://raw.github.com/cloudhead/less.js/master/dist/less-1.1.6.min.js" type="text/javascript"></script>
-						
-		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-		
-		<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
-		
-		<?php wp_head(); ?>
-	
-	</head>
-	
-	<body <?php body_class(); ?>>
-	
-	<div id="header">
-	
-		<?php
-		if(is_home() || is_front_page()): ?>
-			<h1 id="logo"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
-		<?php
-		else: ?>
-			<div id="logo"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></div>
-		<?php
-		endif; ?>
-	
-	</div> <!-- header -->
-	
-	<div id="content">
+        <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/inc/css/main.css">
+
+        <script src="<?php bloginfo('template_url'); ?>/inc/js/libs/modernizr-2.6.2.min.js"></script>
+
+        <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+        
+        <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
+        
+        <?php wp_head(); ?>
+
+    </head>
+
+    <body <?php body_class(); ?>>
+
+    	<!--[if lt IE 7]>
+    	    <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+    	<![endif]-->
