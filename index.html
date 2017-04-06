@@ -1,179 +1,224 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
 </head>
+
 <body>
 
-	<header>
+    <header>
+        <nav class="navbar navbar-default ">
+            <div class="container">
 
-		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="container-fluid">
-
-				<div class="navbar-header" >
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu" aria-expanded="false">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
 
-					<a class="navbar-brand" href="#">
-						<!--<img src="assets/img/VistaLifeLogo_white.png" class="img-responsive">-->
-						Vista Life
-					</a>
+                    <a class="navbar-brand" href="#">
+                        <img class="brand" src="assets/img/vistalifelogo_white.png">
+                    </a>
+                </div>
 
-					<div class="collapse navbar-collapse" id="navbar-menu">
-						<ul class="nav navbar-nav">
-							<li><a href="#como-funciona">Como Funciona</a></li>
-							<li><a href="#solucao">Solução</a></li>
-							<li><a href="#nossos-diferenciais">Nossos Diferenciais</a></li>
-							<li><a href="#interessado">Interessados</a></li>
-							<li><a href="blog.html">Blog</a></li>
-							<li><a href="#contato">Contato</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</nav>
+                <div class="collapse navbar-collapse" id="collapse-navbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#funcionamento" class="itemMenu" style="color: white">Como Funciona</a></li>
+                        <li><a href="#" class="itemMenu" style="color: white">Soluções</a></li>
+                        <li><a href="#" class="itemMenu" style="color: white">Nossos Diferenciais</a></li>
+                        <li><a href="#" class="itemMenu" style="color: white">Blog</a></li>
+                        <li><a href="#contato" class="itemMenu" style="color: white">Contato</a></li>
+                        <li><button type="button" class="btn btn-gold btn-lg" style="margin-top: 10px">Vamos Conversar?</button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-	
+        <div class="topCasaFina-banner">
+            <h1>Vista Life</h1>
+            <h3>Trabalhamos na melhor forma de estruturar suas finanças para que seus sonhos se tornem realidade.</h3><br>
+            <button type="button" class="btn btn-gold btn-lg" style="margin-top: 10px">SAIBA MAIS</button>
+        </div>
 
-		<!-- <div class="topBanner-SaibaMais">
-							<h3>Trabalhamos na melhor forma de estruturar suas finanças para que seus sonhos se tornem realidade.</h3>
-							<button type="button" class="btn btn-gold btn-lg">SAIBA MAIS</button>
-						</div>-->
+    </header>
 
-	</header>
+    <section class="container" id="funcionamento">
+        <h2 data-toogle="collapse" data-target="p" class="titulo">COMO FUNCIONA</h2>
+
+        <div class="row">
+            <div class="col-xs-3">
+
+                <figure class="thumbnail">
+                    <img src="assets/img/goldIcon001.png" alt="">
+                    <figcaption class="caption">
+                        <h3 class="titulo">Conversar</h3>
+                        <p>
+                            É conversando que se entende. Por isso, queremos ouvir um pouco mais sobre a sua história e quais são seus projetos, objetivos e prioridades.
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="col-xs-3">
+
+                <figure class="thumbnail">
+                    <img src="assets/img/goldIcon001.png" alt="">
+                    <figcaption class="caption">
+                        <h3 class="titulo">Planejar</h3>
+                        <p>
+                            Definimos estratégias e desenhamos as melhores opções, para que seus projetos de vida sejam realizados.
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-xs-3">
+
+                <figure class="thumbnail">
+                    <img src="assets/img/goldIcon001.png" alt="">
+                    <figcaption class="caption">
+                        <h3 class="titulo">Implementar</h3>
+                        <p>
+                            Esse é o momento de colocar em prática nossas ações para que seus objetivos se tornem realidade.
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-xs-3">
+
+                <figure class="thumbnail">
+                    <img src="assets/img/goldIcon001.png" alt="">
+                    <figcaption class="caption">
+                        <h3 class="titulo">Acompanhar</h3>
+                        <p>
+                            Monitoramos de perto para garantir que seus planos se mantenham nos eixos.
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
 
 
-	<section class="container" id="como-funciona">
-		<h2 data-toogle="collapse" data-target="p" class="titulo">COMO FUNCIONA</h2>
-		<div class="comofunciona-responsivo">
-			<img src="assets/img/goldIcon001.png" height="10%" width="10%">
-			<h3>
-				Conte-nos sobre você
-			</h3>
-		</div>
-		<div class="comofunciona-responsivo">
-			<img src="assets/img/goldIcon001.png" height="10%" width="10%">
-			<h3>
-				Planejamos com você
-			</h3>
-		</div>
-		<div class="comofunciona-responsivo">
-			<img src="assets/img/goldIcon001.png" height="10%" width="10%">
-			<h3>
-				Implementamos com você
-			</h3>
-		</div>
-		<div class="comofunciona-responsivo">
-			<img src="assets/img/goldIcon001.png" height="10%" width="10%">
-			<h3>
-				Acompanhamos com você
-			</h3>
-		</div>
-	</section>
+    </section>
+
+    <div class="jumbotron">
+        <div class="container">
+            <img src="assets/img/solucao.png" class="img-responsive" alt="">
+        </div>
+    </div>
 
 
-	<div class="jumbotron">
-		<div class="container" id="solucao">
-			<h2 class="titulo">SOLUÇÃO</h2>
-			<center><img src="assets/img/solucao.png" class="img-responsive"></center>
-		</div>
-	</div>
+    <section class="container" id="nossos-diferenciais">
+        <h2 class="titulo">NOSSOS DIFERENCIAIS</h2>
+        <div class="panel-group" id="group-diferenciais">
+            <div class="panel">
+                <div class="panel-heading" style="background-color: #B0924E; color: white" align="center">
+                    <h3 class="panel-title" data-toogle="collapse" data-target="#text-cfp" data-parent="#group-diferenciais">CFP(R)</h3>
+                </div>
+                <div id="text-cfp" class="collapse in">
+                    <div class="panel-body" style="background-color: #E6E6E6">
+                        <p>uahduahduadhauudhauudhauas uahsuahsu aushaus .... </p>
+                    </div>
+                </div>
+            </div>
 
-	<section class="container" id="nossos-diferenciais">
-		<h2 class="titulo">NOSSOS DIFERENCIAIS</h2>
-		<div class="panel-group" id="group-diferenciais">
-			<div class="panel">
-				<div class="panel-heading" style="background-color: #B0924E; color: white" align="center">
-					<h3 class="panel-title" data-toogle="collapse" data-target="#text-cfp" data-parent="#group-diferenciais">CFP(R)</h3>
-				</div>
-				<div id="text-cfp" class="collapse in" >
-					<div class="panel-body" style="background-color: #E6E6E6">
-						<p>uahduahduadhauudhauudhauas uahsuahsu aushaus .... </p>
-					</div>
-				</div>
-			</div>
+            <div class="panel">
+                <div class="panel-heading" style="background-color: #B0924E; color: white" align="center">
+                    <h3 class="panel-title" data-toogle="collapse" data-target="#text-cfp" data-parent="#group-diferenciais">CFP(R)</h3>
+                </div>
+                <div id="text-cfp" class="collapse in">
+                    <div class="panel-body" style="background-color: #E6E6E6">
+                        <p>uahduahduadhauudhauudhauas uahsuahsu aushaus .... </p>
+                    </div>
+                </div>
+            </div>
 
-			<div class="panel">
-				<div class="panel-heading" style="background-color: #B0924E; color: white" align="center">
-					<h3 class="panel-title" data-toogle="collapse" data-target="#text-cfp" data-parent="#group-diferenciais">CFP(R)</h3>
-				</div>
-				<div id="text-cfp" class="collapse in" >
-					<div class="panel-body" style="background-color: #E6E6E6">
-						<p>uahduahduadhauudhauudhauas uahsuahsu aushaus .... </p>
-					</div>
-				</div>
-			</div>
+            <div class="panel">
+                <div class="panel-heading" style="background-color: #B0924E; color: white" align="center">
+                    <h3 class="panel-title" data-toogle="collapse" data-target="#text-cfp" data-parent="#group-diferenciais">CFP(R)</h3>
+                </div>
+                <div id="text-cfp" class="collapse in">
+                    <div class="panel-body" style="background-color: #E6E6E6">
+                        <p>uahduahduadhauudhauudhauas uahsuahsu aushaus .... </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			<div class="panel">
-				<div class="panel-heading" style="background-color: #B0924E; color: white" align="center">
-					<h3 class="panel-title" data-toogle="collapse" data-target="#text-cfp" data-parent="#group-diferenciais">CFP(R)</h3>
-				</div>
-				<div id="text-cfp" class="collapse in" >
-					<div class="panel-body" style="background-color: #E6E6E6">
-						<p>uahduahduadhauudhauudhauas uahsuahsu aushaus .... </p>
-					</div>
-				</div>
-			</div>
-		</div>	
-	</section>
 
-	<section class="container" id="interessado">
-		<h2 class="titulo">FICOU INTERESSADO ?</h2>
-		<p>Entre em contato conosco</p>
-		<form>
-			<div class="form-group">
-				<label for="contato-nome">Nome:</label>
-				<input type="text" name="" id="contato-nome" placeholder="Seu Nome" class="form-control">
-			</div>
+    <div class="jumbotron" class="contato">
+        <section id="contato" class="container">
+            <h2>Contato</h2>
+            <h4>Entre em contato conosco</h4>
 
-			<div class="form-group">
-				<label for="contato-email">Email</label>
-				<div class="input-group">
-					<div class="input-group-addon">@</div>
-					<input type="email" name="" id="contato-email" placeholder="Seu Email" class="form-control">
-				</div>
-			</div>
+            <form>
+                <div class="form-group">
+                    <label for="contato-nome">Nome:</label>
+                    <input id="contato-nome" class="form-control" type="text" placeholder="Seu nome">
+                </div>
 
-			<div class="form-group">
-				<label for="contato-phone">Telefone</label>
-				<input type="telephone" name="" id="contato-phone" placeholder="Seu Telefone" class="form-control">	
-			</div>
+                <div class="form-group">
+                    <label for="contato-email">E-mail:</label>
+                    <div class="input-group">
+                        <div class="input-group-addon">@</div>
+                        <input id="contato-email" class="form-control" type="email" placeholder="Seu e-mail">
+                    </div>
+                </div>
 
-			<div class="form-group">
-				<button type="button" class="btn btn-danger btn-lg" type="submit">Confirmar</button>
-			</div>
+                <div class="grupo-radio">
+                    <div class="radio">
+                        <label>
+						<input type="radio" name="tipo-pessoa" value="fisica" checked>
+						Pessoa física
+					</label>
+                    </div>
 
-		</form>
-	</section>
+                    <div class="radio">
+                        <label>
+						<input type="radio" name="tipo-pessoa" value="juridica">
+						Pessoa jurídica
+					</label>
+                    </div>
+                </div>
+                <!--
 
-	<footer id="contato">
+			--><select class="contato-select form-control" name="tipo-solicitacao">
+				<option value="" disabled selected>Tipo de solicitação</option>
+			  <option value="casa">Casa</option>
+			  <option value="apartamento">Apartamento</option>
+			  <option value="mansao">Mansão</option>
+			</select>
 
-		<address style="color: white">
-			<strong>Vista Life</strong><br>
-			Mussum Ipsum, cacilds vidis litro abertis.<br>
-			<abbr title="Telefone">Tel.:</abbr> (13) 99172-8078		
+                <button type="submit" class="btn btn-primary">Enviar</button>
+
+            </form>
+        </section>
+    </div>
+
+
+
+
+    <footer>
+        <address>
+			<strong>TopCasaFina Arquitetura</strong><br>
+			Rua Vergueiro, 3185, Vila Mariana<br>
+			São Paulo, SP<br>
+			Tel: (11) 5571-2751 ou 5083-3884
 		</address>
-
-		<address style="color: white">
-			Email: vistalife@vistalife.com.br	
+        <address>
+			E-mail: contato.topcasafina@alura.com.br
 		</address>
+    </footer>
 
-	</footer>
-
-
-
-
-	<script src="assets/js/jquery.js"></script>
-	<script src="bootstrap/js/bootstrap.min.js"></script>
-
-
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/navbar-animation-fix.js"></script>
 </body>
+
 </html>
