@@ -1,0 +1,127 @@
+/*
+
+	Theme Name: THEME_NAME 
+	Theme URI: THEME_URL
+	Description: WordPress Theme
+	Version: 1.0
+	Author: AUTHOR
+	Author URI: AUTHOR_URL
+
+*/
+
+.contato {
+    background-image: url(assets/img/tablet.jpeg);
+    background-size: cover;
+    background-position: top center;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+header {
+    background-image: url(assets/img/background.jpg);
+    background-size: cover;
+    background-position: top center;
+    height: 100%;
+}
+
+header h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.title{
+    color: #B0924E;
+    text-align: center;
+}
+
+.postArea{
+    background-color: #e6e6e6;
+}
+.postArea *{
+    background-color: transparent;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.brand {
+    max-width: 150px;
+    margin-top: -0.45em;
+}
+
+.itemMenu {
+    /*O !important está sendo usado para anular a cor padrão do bootstrap*/
+    color: white !important;
+    font-size: large;
+    margin-top: 1.5em;
+}
+
+.thumbnail {
+    border: 0em;
+    text-align: justify;
+}
+
+.topCasaFina-banner {
+    color: #FFF;
+    text-align: center;
+    width: 100%;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s;
+}
+
+.titulo-depoimentos {
+    background-color: #0275D8;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: #FFF;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+.btn-gold {
+    background-color: #B0924E;
+    color: white;
+    margin-top: 1.5em;
+}
+
+.titulo {
+    text-align: center;
+    color: #B0924E;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+
+.contato-select,
+.grupo-radio {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+
+.grupo-radio .radio:first-child {
+    margin-top: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #FFF;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+footer address:last-child {
+    margin-bottom: 0;
+}
