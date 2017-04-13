@@ -7,14 +7,7 @@
 get_header(); 
 ?>
 
-	<section class="container howItWorks" id="funcionamento">
-        <div class="topCasaFina-banner">
-            <h3>Trabalhamos na melhor forma de estruturar suas finanças</h3>
-            <h3>para que seus sonhos se tornem realidade.</h3>
-            <button type="button" class="btn btn-gold btn-lg" style="margin-top: 10px">SAIBA MAIS</button>
-        </div>
-        <h2 data-toogle="collapse" data-target="p" class="titulo">COMO FUNCIONA</h2>
-
+    <section class="container howItWorks" id="funcionamento">
         <div class="row">
             <div class="col-xs-3">
 
@@ -70,13 +63,13 @@ get_header();
     </section>
 
     <div class="jumbotron">
-        <div class="container">
-            <h2 class="titulo">NOSSO PLANEJAMENTO</h2>
+        <div class="container content-padding">
+            <h2 class="titulo mainTitle">NOSSO PLANEJAMENTO</h2>
             <img src="<?php bloginfo('template_url'); ?>/assets/img/solucao.png" class="img-responsive" alt="">
         </div>
     </div>
 
-    <section class="container" id="nossos-diferenciais">
+    <section class="container content-padding" id="nossos-diferenciais">
         <h2 class="titulo">NOSSOS DIFERENCIAIS</h2>
         <div class="row panel-group" id="group-diferenciais">
             <div class="col-md-4 col-xs-12 panel">
@@ -114,19 +107,17 @@ get_header();
         </div>
     </section>
 
-    <div class="jumbotron" class="contato">
-        <section id="contato" class="container">
+    <div class="jumbotron contato">
+        <section id="contato" class="container content-padding">
             <h2>Contato</h2>
             <h4>Entre em contato conosco</h4>
 
             <form>
                 <div class="form-group">
-                    <label for="contato-nome">Nome:</label>
                     <input id="contato-nome" class="form-control" type="text" placeholder="Seu nome">
                 </div>
 
                 <div class="form-group">
-                    <label for="contato-email">E-mail:</label>
                     <div class="input-group">
                         <div class="input-group-addon">@</div>
                         <input id="contato-email" class="form-control" type="email" placeholder="Seu e-mail">
@@ -161,44 +152,52 @@ get_header();
             </form>
         </section>
     </div>
-    <h1 class="title">BLOG</h1>
+    <div class="content-padding post-padding">
+        <h1 class="title">BLOG</h1>
 
-    <span class="postArea">
+        <span class="postArea">
 
-    	<?php 
-    	if (have_posts()) : ?>
+        	<?php 
+        	if (have_posts()) : ?>
+                <div class="row">
 
-    		<?php 
-    		while (have_posts()) : the_post(); ?>
+            		<?php 
+            		while (have_posts()) : the_post(); ?>
 
-    			<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-    			
-    				<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-    				<small><?php the_time('F jS, Y') ?> <!-- by <?php the_author() ?> --></small>
+            			<div <?php post_class("col-md-6 col-xs-12 post-style") ?> id="post-<?php the_ID(); ?>">
+                            <div class="col-md-5 col-xs-12 post-thumb"></div>
+                            <div class="col-md-5 col-xs-12">
+                                <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+                                <small><?php the_time('F jS, Y') ?> <!-- by <?php the_author() ?> --></small>
 
-    				<?php the_content('Read the rest of this entry &raquo;'); ?>
+                                <?php the_content('Read the rest of this entry &raquo;'); ?>
 
-    				<p class="postmetadata"><?php the_tags('Tags: ', ', ', '<br />'); ?> Posted in <?php the_category(', ') ?> | <?php edit_post_link('Edit', '', ' | '); ?>  <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></p>
-    			</div>
+                                <p class="postmetadata"><?php the_tags('Tags: ', ', ', '<br />'); ?> Posted in <?php the_category(', ') ?> | <?php edit_post_link('Edit', '', ' | '); ?>  <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></p>
+                            </div>
+            			
+            				
+            			</div>
 
-    		<?php 
-    		endwhile; ?>
+            		<?php 
+            		endwhile; ?>
 
-    		<div class="navigation">
-    			<div class="alignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
-    			<div class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
-    		</div>
+            		<div class="navigation">
+            			<div class="alignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
+            			<div class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
+            		</div>
+                </div>
 
-    	<?php 
-    	else : ?>
+        	<?php 
+        	else : ?>
 
-    		<h2 class="center">Not Found</h2>
-    		<p class="center">Sorry, but you are looking for something that isn't here.</p>
-    		<?php get_search_form(); ?>
+        		<h2 class="center">Not Found</h2>
+        		<p class="center">Sorry, but you are looking for something that isn't here.</p>
+        		<?php get_search_form(); ?>
 
-    	<?php 
-    	endif; ?>
-    </span>
+        	<?php 
+        	endif; ?>
+        </span>
+    </div>
 
 <?php 
 get_sidebar(); ?>

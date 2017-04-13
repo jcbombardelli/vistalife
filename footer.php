@@ -20,16 +20,31 @@
 
         <?php wp_footer(); ?>
         <footer>
-            <address>
-                <strong>TopCasaFina Arquitetura</strong><br>
-                Rua Vergueiro, 3185, Vila Mariana<br>
-                São Paulo, SP<br>
-                Tel: (11) 5571-2751 ou 5083-3884
-            </address>
-            <address>
-                E-mail: contato.topcasafina@alura.com.br
-            </address>
+            <div class="row footer">
+                <div class="col-md-7 col-xs-12">
+                    <ul>
+                        <li>Home</li>
+                        <li>Como Funciona</li>
+                        <li>Soluções</li>
+                        <li>Blog</li>
+                        <li>Diferenciais</li>
+                        <li>Fale Conosco</li>
+                    </ul>                    
+                </div>
+                <div class="col-md-5 col-xs-12">
+                    <address>
+                        <strong>TopCasaFina Arquitetura</strong><br>
+                        Rua Vergueiro, 3185, Vila Mariana<br>
+                        São Paulo, SP<br>
+                        Tel: (11) 5571-2751 ou 5083-3884
+                    </address>
+                    <address>
+                        E-mail: contato.topcasafina@alura.com.br
+                    </address>
+                </div>
+            </div>
         </footer>
+        <div class="disclaimer"></div>
 
     </body>
 

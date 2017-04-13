@@ -9,10 +9,69 @@
 
 */
 
+
+@font-face {
+    font-family: klavikaBold;
+    src: url(assets/fonts/klavika/klavikaboldbold.otf);
+}
+
+@font-face {
+    font-family: klavika;
+    src: url(assets/fonts/klavika/klavikaregular-plain.otf);
+}
+
+.howItWorks section{
+    margin-bottom: 2.5em;
+}
+
+.topCasaFina-title{
+    margin-bottom: 1.5em !important;
+}
+
+.content-padding{
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.post-thumb{
+    background-color: #B0924E !important;
+    min-height: 14em;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: klavikaBold;
+}
+
+*{
+    font-family: klavika;
+}
+
+.disclaimer{
+    min-height: 5em;
+    background-color: #333;
+}
+
+.footer{
+    padding-right: 13em;
+    padding-left: 13em;
+}
+
+.footer li{
+    list-style-type: none;
+    color: #B0924E;
+}
+
+.panel-group{
+    margin-bottom: 10em;
+}
+
+
+
 .contato {
-    background-image: url(assets/img/tablet.jpeg);
+    /*background-image: url(assets/img/tablet.jpeg);*/
     background-size: cover;
     background-position: top center;
+    background-color: #F5F5F5;
 }
 
 html,
@@ -37,9 +96,19 @@ header h1 {
     text-align: center;
 }
 
+.post-padding{
+    margin-right: 5em;
+    margin-left: 5em;
+}
+
+.post-style{
+    margin-bottom: 2em;
+}
+
 .postArea{
     background-color: #e6e6e6;
 }
+
 .postArea *{
     background-color: transparent;
 }
@@ -97,11 +166,15 @@ header h1 {
     margin-top: 1.5em;
 }
 
+.btn-moreabout{
+    margin-top: 5em;
+}
+
 .titulo {
     text-align: center;
     color: #B0924E;
-    margin-top: 2.5em;
-    margin-bottom: 2.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .contato-select,
@@ -116,7 +189,7 @@ header h1 {
 }
 
 footer {
-    background-color: #333;
+    background-color: #000;
     color: #FFF;
     padding: 20px;
     margin-top: 10px;

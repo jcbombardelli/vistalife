@@ -68,6 +68,14 @@
 
 
         </header>
+        <section class="container howItWorks" id="funcionamento">
+            <div class="topCasaFina-banner">
+                <h3>Trabalhamos na melhor forma de estruturar suas finanças</h3>
+                <h3>para que seus sonhos se tornem realidade.</h3>
+                <button type="button" class="btn btn-gold btn-lg btn-moreabout">SAIBA MAIS</button>
+            </div>
+            <h2 data-toogle="collapse" data-target="p" class="titulo topCasaFina-title">COMO FUNCIONA</h2>
+        </section>
 
     	<!--[if lt IE 7]>
     	    <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
