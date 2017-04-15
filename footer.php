@@ -25,10 +25,10 @@
                     <ul>
                         <li>Home</li>
                         <li>Como Funciona</li>
-                        <li>Soluções</li>
-                        <li>Blog</li>
+                        <li>Nosso Planejamento</li>
                         <li>Diferenciais</li>
-                        <li>Fale Conosco</li>
+                        <li>Blog</li>
+                        <li>Contato</li>
                     </ul>                    
                 </div>
                 <div class="col-md-5 col-xs-12">

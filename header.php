@@ -56,8 +56,8 @@
                     <div class="collapse navbar-collapse" id="collapse-navbar">
                         <ul class="nav navbar-nav">
                             <li><a href="#funcionamento" class="itemMenu">Como Funciona</a></li>
-                            <li><a href="#" class="itemMenu">Soluções</a></li>
-                            <li><a href="#" class="itemMenu">Nossos Diferenciais</a></li>
+                            <li><a href="#" class="itemMenu">Nosso Planejamento</a></li>
+                            <li><a href="#" class="itemMenu">Diferenciais</a></li>
                             <li><a href="#" class="itemMenu">Blog</a></li>
                             <li><a href="#contato" class="itemMenu">Contato</a></li>
                             <li><button type="button" class="btn btn-gold btn-lg">Vamos Conversar?</button></li>

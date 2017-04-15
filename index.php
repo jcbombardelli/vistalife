@@ -65,47 +65,102 @@ get_header();
     <div class="jumbotron">
         <div class="container content-padding our-planning">
             <h2 class="titulo mainTitle">NOSSO PLANEJAMENTO</h2>
-            <img src="<?php bloginfo('template_url'); ?>/assets/img/solucao.png" class="img-solution img-responsive" alt="">
+            <div class="col-md-12 text-center">
+                <p>Nosso planejamento financeiro aborda diversos assuntos, aplicados com inteligência para que seu planos se tornem reais.</p>
+            </div>
+            <div class="col-md-12">
+                <img src="<?php bloginfo('template_url'); ?>/assets/img/solucao.png" class="img-solution img-responsive" alt="">
+            </div>
         </div>
     </div>
 
-    <section class="container content-padding" id="nossos-diferenciais">
+    <section class="container" id="nossos-diferenciais">
         <h2 class="titulo">NOSSOS DIFERENCIAIS</h2>
         <div class="row panel-group" id="group-diferenciais">
             <div class="col-md-4 col-xs-12 panel">
                 <div class="panel-heading" style="background-color: #B0924E; color: white" align="center">
-                    <h3 class="panel-title" data-toogle="collapse" data-target="#text-cfp" data-parent="#group-diferenciais">CFP(R)</h3>
+                    <h3 class="panel-title" data-toogle="collapse" data-target="#text-cfp" data-parent="#group-diferenciais">CFP® - Certified Financial Planner</h3>
                 </div>
                 <div id="text-cfp" class="collapse in">
-                    <div class="panel-body" style="background-color: #E6E6E6">
-                        <p>uahduahduadhauudhauudhauas uahsuahsu aushaus .... </p>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id accumsan risus, nec congue nisl. Curabitur finibus purus risus, sed laoreet turpis maximus a. Sed fermentum vel libero sit amet fringilla. Nulla eget tristique turpis. Maecenas vitae rutrum orci. Phasellus auctor est consectetur elit suscipit bibendum. Vivamus tincidunt libero justo, non tristique risus congue eu. Nam commodo euismod nibh non pretium. Phasellus mi augue, luctus a lectus at, aliquam condimentum erat. Pellentesque enim dui, pellentesque sit amet orci ac, sollicitudin mollis lorem. Praesent in fermentum tellus. Pellentesque nec placerat mauris, malesuada condimentum purus. Aenean consequat nisi at est mattis ornare. </p>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4 col-xs-12 panel">
                 <div class="panel-heading" style="background-color: #B0924E; color: white" align="center">
-                    <h3 class="panel-title" data-toogle="collapse" data-target="#text-cfp" data-parent="#group-diferenciais">CFP(R)</h3>
+                    <h3 class="panel-title" data-toogle="collapse" data-target="#text-cfp" data-parent="#group-diferenciais">Experiência</h3>
                 </div>
                 <div id="text-cfp" class="collapse in">
-                    <div class="panel-body" style="background-color: #E6E6E6">
-                        <p>uahduahduadhauudhauudhauas uahsuahsu aushaus .... </p>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id accumsan risus, nec congue nisl. Curabitur finibus purus risus, sed laoreet turpis maximus a. Sed fermentum vel libero sit amet fringilla. Nulla eget tristique turpis. Maecenas vitae rutrum orci. Phasellus auctor est consectetur elit suscipit bibendum. Vivamus tincidunt libero justo, non tristique risus congue eu. Nam commodo euismod nibh non pretium. Phasellus mi augue, luctus a lectus at, aliquam condimentum erat. Pellentesque enim dui, pellentesque sit amet orci ac, sollicitudin mollis lorem. Praesent in fermentum tellus. Pellentesque nec placerat mauris, malesuada condimentum purus. Aenean consequat nisi at est mattis ornare. </p>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4 col-xs-12 panel">
                 <div class="panel-heading" style="background-color: #B0924E; color: white" align="center">
-                    <h3 class="panel-title" data-toogle="collapse" data-target="#text-cfp" data-parent="#group-diferenciais">CFP(R)</h3>
+                    <h3 class="panel-title" data-toogle="collapse" data-target="#text-cfp" data-parent="#group-diferenciais">Alinhamento de Interesses</h3>
                 </div>
                 <div id="text-cfp" class="collapse in">
-                    <div class="panel-body" style="background-color: #E6E6E6">
-                        <p>uahduahduadhauudhauudhauas uahsuahsu aushaus .... </p>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id accumsan risus, nec congue nisl. Curabitur finibus purus risus, sed laoreet turpis maximus a. Sed fermentum vel libero sit amet fringilla. Nulla eget tristique turpis. Maecenas vitae rutrum orci. Phasellus auctor est consectetur elit suscipit bibendum. Vivamus tincidunt libero justo, non tristique risus congue eu. Nam commodo euismod nibh non pretium. Phasellus mi augue, luctus a lectus at, aliquam condimentum erat. Pellentesque enim dui, pellentesque sit amet orci ac, sollicitudin mollis lorem. Praesent in fermentum tellus. Pellentesque nec placerat mauris, malesuada condimentum purus. Aenean consequat nisi at est mattis ornare. </p>
                     </div>
                 </div>
             </div>  
         </div>
     </section>
+
+    <div class="jumbotron">
+        <div class="post-padding">
+            <h1 class="title">BLOG</h1>
+
+            <span class="postArea">
+
+                <?php 
+                if (have_posts()) : ?>
+                    <div class="row">
+
+                        <?php 
+                        while (have_posts()) : the_post(); ?>
+
+                            <div <?php post_class("col-md-5 col-xs-12 post-style") ?> id="post-<?php the_ID(); ?>">
+                                <div class="col-md-5 col-xs-12 post-thumb"></div>
+                                <div class="col-md-7 col-xs-12">
+                                    <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+                                    <small><?php the_time('d/m/Y') ?> <!-- by <?php the_author() ?> --></small>
+
+                                    <?php the_content('Read the rest of this entry &raquo;'); ?>
+
+                                    <a href="<?php the_permalink() ?>">Saiba mais</a>
+                                </div>
+                            
+                                
+                            </div>
+
+                        <?php 
+                        endwhile; ?>
+
+                        <div class="navigation">
+                            <div class="alignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
+                            <div class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
+                        </div>
+                    </div>
+
+                <?php 
+                else : ?>
+
+                    <h2 class="center">Not Found</h2>
+                    <p class="center">Sorry, but you are looking for something that isn't here.</p>
+                    <?php get_search_form(); ?>
+
+                <?php 
+                endif; ?>
+            </span>
+        </div>
+        
+    </div>
 
     <div class="jumbotron contato">
         <section id="contato" class="container content-padding">
@@ -152,52 +207,7 @@ get_header();
             </form>
         </section>
     </div>
-    <div class="content-padding post-padding">
-        <h1 class="title">BLOG</h1>
-
-        <span class="postArea">
-
-        	<?php 
-        	if (have_posts()) : ?>
-                <div class="row">
-
-            		<?php 
-            		while (have_posts()) : the_post(); ?>
-
-            			<div <?php post_class("col-md-6 col-xs-12 post-style") ?> id="post-<?php the_ID(); ?>">
-                            <div class="col-md-5 col-xs-12 post-thumb"></div>
-                            <div class="col-md-5 col-xs-12">
-                                <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-                                <small><?php the_time('F jS, Y') ?> <!-- by <?php the_author() ?> --></small>
-
-                                <?php the_content('Read the rest of this entry &raquo;'); ?>
-
-                                <p class="postmetadata"><?php the_tags('Tags: ', ', ', '<br />'); ?> Posted in <?php the_category(', ') ?> | <?php edit_post_link('Edit', '', ' | '); ?>  <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></p>
-                            </div>
-            			
-            				
-            			</div>
-
-            		<?php 
-            		endwhile; ?>
-
-            		<div class="navigation">
-            			<div class="alignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
-            			<div class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
-            		</div>
-                </div>
-
-        	<?php 
-        	else : ?>
-
-        		<h2 class="center">Not Found</h2>
-        		<p class="center">Sorry, but you are looking for something that isn't here.</p>
-        		<?php get_search_form(); ?>
-
-        	<?php 
-        	endif; ?>
-        </span>
-    </div>
+    
 
 <?php 
 get_sidebar(); ?>

@@ -36,6 +36,7 @@
 .post-thumb{
     background-color: #B0924E !important;
     min-height: 14em;
+    padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -65,7 +66,9 @@ h1, h2, h3, h4, h5, h6{
     margin-bottom: 10em;
 }
 
-
+.text-center{
+    text-align: center;
+}
 
 .contato {
     /*background-image: url(assets/img/tablet.jpeg);*/
@@ -114,7 +117,14 @@ header h1 {
 }
 
 .post-style{
+    border-style: solid;
+    border-color: #999999;
     margin-bottom: 2em;
+    padding: 0;
+    min-height: 3em;
+    max-height: 15em;
+    margin-left: 1em;
+    margin-bottom: 1em;
     word-break: break-all;
 }
 
@@ -199,6 +209,11 @@ header h1 {
 
 .grupo-radio .radio:first-child {
     margin-top: 0;
+}
+
+.panel-body{
+    background-color: #E6E6E6;
+    text-align: justify;
 }
 
 footer {
