@@ -31,7 +31,7 @@
                         <li>Fale Conosco</li>
                     </ul>                    
                 </div>
-                <div class="col-md-5 col-xs-4">
+                <div class="col-md-5 col-xs-12">
                     <address>
                         <strong>TopCasaFina Arquitetura</strong><br>
                         Rua Vergueiro, 3185, Vila Mariana<br>
