@@ -33,11 +33,6 @@
     margin-bottom: 5em;
 }
 
-.post-thumb{
-    background-color: #B0924E !important;
-    min-height: 14em;
-    padding: 0;
-}
 
 h1, h2, h3, h4, h5, h6{
     font-family: klavikaBold;
@@ -95,8 +90,13 @@ header h1 {
 }
 
 .title{
-    color: #B0924E;
-    text-align: center;
+    color: #B0924E !important;
+    text-align: center !important;
+}
+
+.title a{
+    color: #B0924E !important;
+
 }
 
 .img-solution{
@@ -121,11 +121,43 @@ header h1 {
     border-color: #999999;
     margin-bottom: 2em;
     padding: 0;
-    min-height: 3em;
-    max-height: 15em;
+    min-height: 20.4em;
     margin-left: 1em;
     margin-bottom: 1em;
     word-break: break-all;
+}
+
+.post-thumb{
+    background-color: #B0924E !important;
+    min-height: 20em;
+    max-height: 20em;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.post-thumb img{
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.post-buttons{
+    text-align: right;
+}
+
+.post-buttons .btn-loadpost{
+    border-radius: 0 !important;
+    min-width: 10em;
+}
+
+.post-img{
+    /*width: 15.3em;
+    height: 20em;*/
+    width: inherit;
+    height: inherit;
 }
 
 .postArea{
@@ -134,6 +166,15 @@ header h1 {
 
 .postArea *{
     background-color: transparent;
+}
+
+.post-description{
+    text-align: center;
+    min-height: 13em;
+}
+.post-description p{
+    font-size: 1em;
+    text-align: justify;
 }
 
 .navbar-default {
@@ -211,9 +252,18 @@ header h1 {
     margin-top: 0;
 }
 
+.panel-title{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
 .panel-body{
     background-color: #E6E6E6;
     text-align: justify;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 footer {

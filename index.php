@@ -4,7 +4,11 @@
  * @subpackage YOUR_THEME
  */
 
-get_header(); 
+get_header();
+function custom_excerpt_length( $length ) {
+    return 29;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 ?>
 
     <section class="container howItWorks" id="funcionamento">
@@ -114,10 +118,9 @@ get_header();
 
     <div class="jumbotron">
         <div class="post-padding">
-            <h1 class="title">BLOG</h1>
+            <h2 class="title">BLOG</h2>
 
             <span class="postArea">
-
                 <?php 
                 if (have_posts()) : ?>
                     <div class="row">
@@ -126,17 +129,16 @@ get_header();
                         while (have_posts()) : the_post(); ?>
 
                             <div <?php post_class("col-md-5 col-xs-12 post-style") ?> id="post-<?php the_ID(); ?>">
-                                <div class="col-md-5 col-xs-12 post-thumb"></div>
-                                <div class="col-md-7 col-xs-12">
-                                    <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-                                    <small><?php the_time('d/m/Y') ?> <!-- by <?php the_author() ?> --></small>
-
-                                    <?php the_content('Read the rest of this entry &raquo;'); ?>
-
-                                    <a href="<?php the_permalink() ?>">Saiba mais</a>
+                                <div class="col-md-5 col-xs-12 post-thumb">
+                                    <img class="post-img" src="<?php the_post_thumbnail_url() ?>">
                                 </div>
-                            
-                                
+                                <div class="post-description col-md-7 col-xs-12">
+                                    <h3 class="title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3 class="title">
+                                    <?php the_excerpt(); ?>
+                                </div>
+                                <div class="post-buttons col-md-7 col-xs-12">
+                                    <a href="<?php the_permalink() ?>" class="btn btn-gold btn-lg btn-loadpost">SAIBA MAIS</a>
+                                </div>
                             </div>
 
                         <?php 
