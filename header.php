@@ -3,6 +3,7 @@
  * @package WordPress
  * @subpackage YOUR_THEME
  */
+$linkPath = (is_home() ? "" : "/");
 ?>
 
 <!DOCTYPE html>
@@ -66,11 +67,11 @@
                         <!-- Itens da navbar -->
                         <div id="navbar" class="navbar-collapse collapse">
                             <ul class="nav navbar-nav">
-                                <li><a href="#funcionamento" class="itemMenu">Como Funciona</a></li>
-                                <li><a href="#" class="itemMenu">Nosso Planejamento</a></li>
-                                <li><a href="#" class="itemMenu">Diferenciais</a></li>
-                                <li><a href="#" class="itemMenu">Blog</a></li>
-                                <li><a href="#contato" class="itemMenu">Contato</a></li>
+                                <li><a href="<?=$linkPath?>#funcionamento" class="itemMenu">Como Funciona</a></li>
+                                <li><a href="<?=$linkPath?>#ourPlanning" class="itemMenu">Nosso Planejamento</a></li>
+                                <li><a href="<?=$linkPath?>#nossos-diferenciais" class="itemMenu">Diferenciais</a></li>
+                                <li><a href="http://blog.temp.bruno.works" class="itemMenu">Blog</a></li>
+                                <li><a href="<?=$linkPath?>#contact-form" class="itemMenu">Contato</a></li>
                                 <li><button type="button" class="btn btn-gold btn-lg">Vamos Conversar?</button></li>
                             </ul>
                         </div><!-- fim .nav-collapse -->

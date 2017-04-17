@@ -66,7 +66,7 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
     </section>
 
-    <div class="jumbotron">
+    <div class="jumbotron" id="ourPlanning">
         <div class="container content-padding our-planning">
             <h2 class="titulo mainTitle">NOSSO PLANEJAMENTO</h2>
             <div class="col-md-12 text-center">

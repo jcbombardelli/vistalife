@@ -24,12 +24,12 @@
             <div class="row footer">
                 <div class="menuBar col-md-7 col-xs-8">
                     <ul>
-                        <li>Home</li>
-                        <li>Como Funciona</li>
-                        <li>Nosso Planejamento</li>
-                        <li>Diferenciais</li>
-                        <li>Blog</li>
-                        <li>Contato</li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="<?=$linkPath?>#funcionamento">Como Funciona</a></li>
+                        <li><a href="<?=$linkPath?>#ourPlanning">Nosso Planejamento</a></li>
+                        <li><a href="<?=$linkPath?>#nossos-diferenciais">Diferenciais</a></li>
+                        <li><a href="http://blog.temp.bruno.works">Blog</a></li>
+                        <li><a href="<?=$linkPath?>#contact-form">Contato</a></li>
                     </ul>                    
                 </div>
                 <div class="col-md-5 col-xs-12">
