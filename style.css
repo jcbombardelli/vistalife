@@ -1,0 +1,339 @@
+/*
+
+	Theme Name: THEME_NAME 
+	Theme URI: THEME_URL
+	Description: WordPress Theme
+	Version: 1.0
+	Author: AUTHOR
+	Author URI: AUTHOR_URL
+
+*/
+
+
+@font-face {
+    font-family: klavikaBold;
+    src: url(assets/fonts/klavika/klavikaboldbold.otf);
+}
+
+@font-face {
+    font-family: klavika;
+    src: url(assets/fonts/klavika/klavikaregular-plain.otf);
+}
+
+input[type="button"], input[type="submit"]{
+    color: #FFF;
+    background-color: #0A99D2;
+    border-color: #0A99D2;
+    width: 100%;
+    margin-top: 1em;
+}
+
+input[type="text"], input[type="email"], input[type="phone"]{
+    height: 3em;
+    width: 100%;
+    background-color: #DEDEDE;
+    border: 0em;
+    margin-top: 1em;
+}
+
+textarea{
+    height: 10em;
+    width: 100%;
+    background-color: #DEDEDE;
+    border: 0em;
+    margin-top: 1em;
+}
+
+.div-center{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.howItWorks section{
+    margin-bottom: 2.5em;
+}
+
+.topCasaFina-title{
+    margin-bottom: 1.5em !important;
+}
+
+.center{
+    text-align: center;
+}
+
+.content-padding{
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: klavikaBold;
+}
+
+*{
+    font-family: klavika;
+}
+
+.disclaimer{
+    background-color: #1B2C3F;
+}
+
+.footer{
+    padding-right: 7em;
+    padding-left: 7em;
+}
+
+.footer li{
+    list-style-type: none;
+}
+.footer input{
+    color: #000000;
+}
+.footer input[type="email"]{
+    width: 60%;
+}
+.footer input[type="submit"]{
+    width: 20%;
+    height: 3em;
+    margin-top: 0em;
+}
+
+.panel-group{
+    margin-bottom: 10em;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.contato {
+    /*background-image: url(assets/img/tablet.jpeg);*/
+    background-size: cover;
+    background-position: top center;
+    background-color: #F5F5F5;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+header {
+    background-image: url(assets/img/background.jpg);
+    background-size: cover;
+    background-position: top center;
+    height: 100%;
+}
+
+header h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.title{
+    color: #B0924E !important;
+    text-align: center !important;
+}
+
+.title a{
+    color: #B0924E !important;
+
+}
+
+.img-solution{
+    width: 70%;
+    height: 70
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.our-planning{
+    margin: 0 auto;
+}
+
+.post-padding{
+    margin-right: 5em;
+    margin-left: 5em;
+}
+
+.post-style{
+    border-style: solid;
+    border-color: #999999;
+    margin-bottom: 2em;
+    padding: 0;
+    min-height: 20.4em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    word-break: break-all;
+}
+
+.post-thumb{
+    background-color: #B0924E !important;
+    min-height: 20em;
+    max-height: 20em;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.post-thumb img{
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.post-buttons{
+    text-align: right;
+}
+
+.post-buttons .btn-loadpost{
+    border-radius: 0 !important;
+    min-width: 10em;
+}
+
+.post-img{
+    /*width: 15.3em;
+    height: 20em;*/
+    width: inherit;
+    height: inherit;
+}
+
+.postArea{
+    background-color: #e6e6e6;
+}
+
+.postArea *{
+    background-color: transparent;
+}
+
+.post-description{
+    text-align: center;
+    min-height: 14.18em;
+}
+
+.vistalife-navbar-fixed{
+  background-color: #1B2C3F !important;
+}
+
+.vistalife-navbar .navbar-nav > li > a {
+  color: #d6f14b;
+}
+
+.navbar-collapse{
+  width: 100%;
+}
+
+.navbar-collapse ul{
+  width: 100%;
+}
+
+.post-description p{
+    font-size: 1em;
+    text-align: justify;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.brand {
+    max-width: 150px;
+    margin-top: -0.45em;
+}
+
+.itemMenu {
+    /*O !important está sendo usado para anular a cor padrão do bootstrap*/
+    color: white !important;
+    font-size: large;
+    margin-top: 1.5em;
+}
+
+.thumbnail {
+    border: 0em;
+    text-align: justify;
+}
+
+.topCasaFina-banner {
+    color: #FFF;
+    text-align: center;
+    width: 100%;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s;
+}
+
+.titulo-depoimentos {
+    background-color: #0275D8;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: #FFF;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+.btn-gold {
+    background-color: #B0924E;
+    color: white;
+    margin-top: 1.5em;
+}
+
+.btn-moreabout{
+    margin-top: 5em;
+}
+
+.titulo {
+    text-align: center;
+    color: #B0924E;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.contato-select,
+.grupo-radio {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+
+.grupo-radio .radio:first-child {
+    margin-top: 0;
+}
+
+.panel-title{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.panel-body{
+    background-color: #E6E6E6;
+    text-align: justify;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+footer {
+    background-color: #1B2C3F;
+    color: #FFF;
+    padding: 20px;
+}
+
+footer address:last-child {
+    margin-bottom: 0;
+}
