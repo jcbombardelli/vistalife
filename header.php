@@ -24,6 +24,9 @@
         <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css">
 
+        <script src="<?php bloginfo('template_url'); ?>/assets/js/jquery.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/assets/js/theme.js"></script>
         <script src="<?php bloginfo('template_url'); ?>/inc/js/libs/modernizr-2.6.2.min.js"></script>
 
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
@@ -37,45 +40,51 @@
     <body <?php body_class(); ?>>
 
         <header>
-            <nav class="navbar navbar-default ">
+            <nav class="navbar navbar-default custom-navbar vistalife-navbar">
                 <div class="container">
-
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-
-                        <a class="navbar-brand" href="/">
-                            <img class="brand img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/white_logo.png">
-                        </a>
+                    <div class="col-md-3">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="/">
+                                <img class="brand img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/white_logo.png">
+                            </a>
+                        </div>
                     </div>
 
-                    <div class="collapse navbar-collapse" id="collapse-navbar">
-                        <ul class="nav navbar-nav">
-                            <li><a href="#funcionamento" class="itemMenu">Como Funciona</a></li>
-                            <li><a href="#" class="itemMenu">Nosso Planejamento</a></li>
-                            <li><a href="#" class="itemMenu">Diferenciais</a></li>
-                            <li><a href="#" class="itemMenu">Blog</a></li>
-                            <li><a href="#contato" class="itemMenu">Contato</a></li>
-                            <li><button type="button" class="btn btn-gold btn-lg">Vamos Conversar?</button></li>
-                        </ul>
+                    <div class="col-md-9">
+                        <!-- Esta parte só exibirá no Mobile (quadrado com 3 riscos do menu) -->
+                        <div class="navbar-header">
+                          <button type="button" class="navbar-toggle collapsed" 
+                          data-toggle="collapse" data-target="#navbar">
+                          <!-- A classe sr-only só é exibida em leitor de tela para que pessoas
+                          com deficiencia visual entendam o que há na tela -->
+                          <span class="sr-only">Menu de Navegação</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          </button>
+                        </div>
+                        <!-- Itens da navbar -->
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#funcionamento" class="itemMenu">Como Funciona</a></li>
+                                <li><a href="#" class="itemMenu">Nosso Planejamento</a></li>
+                                <li><a href="#" class="itemMenu">Diferenciais</a></li>
+                                <li><a href="#" class="itemMenu">Blog</a></li>
+                                <li><a href="#contato" class="itemMenu">Contato</a></li>
+                                <li><button type="button" class="btn btn-gold btn-lg">Vamos Conversar?</button></li>
+                            </ul>
+                        </div><!-- fim .nav-collapse -->
                     </div>
                 </div>
             </nav>
-
-
+            <section class="container howItWorks" id="funcionamento">
+                <div class="topCasaFina-banner">
+                    <h3>Trabalhamos na melhor forma de estruturar suas finanças</h3>
+                    <h3>para que seus sonhos se tornem realidade.</h3>
+                    <button type="button" class="btn btn-gold btn-lg btn-moreabout">SAIBA MAIS</button>
+                </div>
+            </section>
         </header>
-        <section class="container howItWorks" id="funcionamento">
-            <div class="topCasaFina-banner">
-                <h3>Trabalhamos na melhor forma de estruturar suas finanças</h3>
-                <h3>para que seus sonhos se tornem realidade.</h3>
-                <button type="button" class="btn btn-gold btn-lg btn-moreabout">SAIBA MAIS</button>
-            </div>
-            <h2 data-toogle="collapse" data-target="p" class="titulo topCasaFina-title">COMO FUNCIONA</h2>
-        </section>
 
     	<!--[if lt IE 7]>
     	    <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>

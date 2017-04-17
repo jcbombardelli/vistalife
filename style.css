@@ -20,12 +20,48 @@
     src: url(assets/fonts/klavika/klavikaregular-plain.otf);
 }
 
+input[type="button"], input[type="submit"]{
+    color: #FFF;
+    background-color: #0A99D2;
+    border-color: #0A99D2;
+    width: 100%;
+    margin-top: 1em;
+}
+
+input[type="text"], input[type="email"], input[type="phone"]{
+    height: 3em;
+    width: 100%;
+    background-color: #DEDEDE;
+    border: 0em;
+    margin-top: 1em;
+}
+
+textarea{
+    height: 10em;
+    width: 100%;
+    background-color: #DEDEDE;
+    border: 0em;
+    margin-top: 1em;
+}
+
+.div-center{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .howItWorks section{
     margin-bottom: 2.5em;
 }
 
 .topCasaFina-title{
     margin-bottom: 1.5em !important;
+}
+
+.center{
+    text-align: center;
 }
 
 .content-padding{
@@ -43,18 +79,27 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .disclaimer{
-    min-height: 5em;
     background-color: #1B2C3F;
 }
 
 .footer{
-    padding-right: 13em;
-    padding-left: 13em;
+    padding-right: 7em;
+    padding-left: 7em;
 }
 
 .footer li{
     list-style-type: none;
-    color: #B0924E;
+}
+.footer input{
+    color: #000000;
+}
+.footer input[type="email"]{
+    width: 60%;
+}
+.footer input[type="submit"]{
+    width: 20%;
+    height: 3em;
+    margin-top: 0em;
 }
 
 .panel-group{
@@ -170,8 +215,25 @@ header h1 {
 
 .post-description{
     text-align: center;
-    min-height: 13em;
+    min-height: 14.18em;
 }
+
+.vistalife-navbar-fixed{
+  background-color: #1B2C3F !important;
+}
+
+.vistalife-navbar .navbar-nav > li > a {
+  color: #d6f14b;
+}
+
+.navbar-collapse{
+  width: 100%;
+}
+
+.navbar-collapse ul{
+  width: 100%;
+}
+
 .post-description p{
     font-size: 1em;
     text-align: justify;
@@ -267,10 +329,9 @@ header h1 {
 }
 
 footer {
-    background-color: #000;
+    background-color: #1B2C3F;
     color: #FFF;
     padding: 20px;
-    margin-top: 10px;
 }
 
 footer address:last-child {

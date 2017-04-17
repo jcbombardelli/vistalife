@@ -13,8 +13,8 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
     <section class="container howItWorks" id="funcionamento">
         <div class="row">
+            <h2 data-toogle="collapse" data-target="p" class="titulo topCasaFina-title">COMO FUNCIONA</h2>
             <div class="col-md-3 col-xs-13">
-
                 <figure class="thumbnail">
                     <img src="<?php bloginfo('template_url'); ?>/assets/img/goldIcon001.png" alt="" width="50%" height="50%">
                     <figcaption class="caption">
@@ -79,37 +79,37 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
     </div>
 
     <section class="container" id="nossos-diferenciais">
-        <h2 class="titulo">NOSSOS DIFERENCIAIS</h2>
+        <h2 class="titulo">DIFERENCIAIS</h2>
         <div class="row panel-group" id="group-diferenciais">
-            <div class="col-md-4 col-xs-12 panel">
+            <div class="col-md-4 col-xs-12">
                 <div class="panel-heading" style="background-color: #B0924E; color: white" align="center">
-                    <h3 class="panel-title" data-toogle="collapse" data-target="#text-cfp" data-parent="#group-diferenciais">CFP® - Certified Financial Planner</h3>
+                    <h4>CFP® - Certified Financial Planner</h1>
                 </div>
                 <div id="text-cfp" class="collapse in">
                     <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id accumsan risus, nec congue nisl. Curabitur finibus purus risus, sed laoreet turpis maximus a. Sed fermentum vel libero sit amet fringilla. Nulla eget tristique turpis. Maecenas vitae rutrum orci. Phasellus auctor est consectetur elit suscipit bibendum. Vivamus tincidunt libero justo, non tristique risus congue eu. Nam commodo euismod nibh non pretium. Phasellus mi augue, luctus a lectus at, aliquam condimentum erat. Pellentesque enim dui, pellentesque sit amet orci ac, sollicitudin mollis lorem. Praesent in fermentum tellus. Pellentesque nec placerat mauris, malesuada condimentum purus. Aenean consequat nisi at est mattis ornare. </p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-4 col-xs-12 panel">
+            <div class="col-md-4 col-xs-12">
                 <div class="panel-heading" style="background-color: #B0924E; color: white" align="center">
-                    <h3 class="panel-title" data-toogle="collapse" data-target="#text-cfp" data-parent="#group-diferenciais">Experiência</h3>
+                    <h4>Experiência</h1>
                 </div>
                 <div id="text-cfp" class="collapse in">
                     <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id accumsan risus, nec congue nisl. Curabitur finibus purus risus, sed laoreet turpis maximus a. Sed fermentum vel libero sit amet fringilla. Nulla eget tristique turpis. Maecenas vitae rutrum orci. Phasellus auctor est consectetur elit suscipit bibendum. Vivamus tincidunt libero justo, non tristique risus congue eu. Nam commodo euismod nibh non pretium. Phasellus mi augue, luctus a lectus at, aliquam condimentum erat. Pellentesque enim dui, pellentesque sit amet orci ac, sollicitudin mollis lorem. Praesent in fermentum tellus. Pellentesque nec placerat mauris, malesuada condimentum purus. Aenean consequat nisi at est mattis ornare. </p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-4 col-xs-12 panel">
+            <div class="col-md-4 col-xs-12">
                 <div class="panel-heading" style="background-color: #B0924E; color: white" align="center">
-                    <h3 class="panel-title" data-toogle="collapse" data-target="#text-cfp" data-parent="#group-diferenciais">Alinhamento de Interesses</h3>
+                    <h4>Alinhamento de Interesses</h1>
                 </div>
                 <div id="text-cfp" class="collapse in">
                     <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id accumsan risus, nec congue nisl. Curabitur finibus purus risus, sed laoreet turpis maximus a. Sed fermentum vel libero sit amet fringilla. Nulla eget tristique turpis. Maecenas vitae rutrum orci. Phasellus auctor est consectetur elit suscipit bibendum. Vivamus tincidunt libero justo, non tristique risus congue eu. Nam commodo euismod nibh non pretium. Phasellus mi augue, luctus a lectus at, aliquam condimentum erat. Pellentesque enim dui, pellentesque sit amet orci ac, sollicitudin mollis lorem. Praesent in fermentum tellus. Pellentesque nec placerat mauris, malesuada condimentum purus. Aenean consequat nisi at est mattis ornare. </p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,.</p>
                     </div>
                 </div>
             </div>  
@@ -165,48 +165,29 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
     </div>
 
     <div class="jumbotron contato">
-        <section id="contato" class="container content-padding">
-            <h2>Contato</h2>
-            <h4>Entre em contato conosco</h4>
-
-            <form>
-                <div class="form-group">
-                    <input id="contato-nome" class="form-control" type="text" placeholder="Seu nome">
-                </div>
-
-                <div class="form-group">
-                    <div class="input-group">
-                        <div class="input-group-addon">@</div>
-                        <input id="contato-email" class="form-control" type="email" placeholder="Seu e-mail">
+        <a class="center fadein-item" target="#contato" href="#"><h2>Ficou Interessado? Clique aqui!</h2></a>
+        <section id="contato" class="div-center container content-padding" style="display: none;">
+            <div class="col-md-6">
+                <h2>Contato</h2>
+                <h4>Entre em contato conosco</h4>
+                <form action="https://formspree.io/hi@bruno.works" method="POST" target="_blank">
+                    <div class="form-group">
+                        <div>
+                            <input type="text" name="name" placeholder="Nome">
+                        </div>
+                        <div>
+                            <input type="phone" name="phone" placeholder="Telefone">
+                        </div>
+                        <div>
+                            <input type="email" name="_replyto" placeholder="Email">
+                        </div>
+                        <div>
+                            <textarea name="message" placeholder="Deixe sua mensagem!"></textarea>
+                        </div>
+                        <input type="submit" class="btn btn-primary" value="Enviar">
                     </div>
-                </div>
-
-                <div class="grupo-radio">
-                    <div class="radio">
-                        <label>
-						<input type="radio" name="tipo-pessoa" value="fisica" checked>
-						Pessoa física
-					</label>
-                    </div>
-
-                    <div class="radio">
-                        <label>
-						<input type="radio" name="tipo-pessoa" value="juridica">
-						Pessoa jurídica
-					</label>
-                    </div>
-                </div>
-
-	            <select class="contato-select form-control" name="tipo-solicitacao">
-					<option value="" disabled selected>Tipo de solicitação</option>
-					<option value="casa">Casa</option>
-					<option value="apartamento">Apartamento</option>
-					<option value="mansao">Mansão</option>
-				</select>
-
-                <button type="submit" class="btn btn-primary">Enviar</button>
-
-            </form>
+                </form>
+            </div>
         </section>
     </div>
     
