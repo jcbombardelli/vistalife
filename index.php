@@ -9,6 +9,7 @@ function custom_excerpt_length( $length ) {
     return 29;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+query_posts('posts_per_page=2');
 ?>
 
     <section class="container howItWorks" id="funcionamento">
@@ -123,7 +124,7 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
             <span class="postArea">
                 <?php 
                 if (have_posts()) : ?>
-                    <div class="row">
+                    <div class="row div-center">
 
                         <?php 
                         while (have_posts()) : the_post(); ?>
@@ -143,11 +144,6 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
                         <?php 
                         endwhile; ?>
-
-                        <div class="navigation">
-                            <div class="alignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
-                            <div class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
-                        </div>
                     </div>
 
                 <?php 
@@ -164,7 +160,7 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
         
     </div>
 
-    <div class="jumbotron contato">
+    <div id="contact-form" class="jumbotron contato">
         <a class="center fadein-item" target="#contato" href="#"><h2>Ficou Interessado? Clique aqui!</h2></a>
         <section id="contato" class="div-center container content-padding" style="display: none;">
             <div class="col-md-6">

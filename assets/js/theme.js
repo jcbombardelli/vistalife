@@ -14,11 +14,20 @@ $(document).ready(function(){
 
 	$(".fadein-item").click(function(e){
 		e.preventDefault();
-		var target = $(this).attr("target");
+		contactFunction(this);
+	});
+
+	$(".contact-item").click(function(e){
+		e.preventDefault();
+		contactFunction(this);
+	});
+
+	var contactFunction = function(object){
+		var target = $(object).attr("target");
 		if ($(target).is(":visible")){
 			$(target).fadeOut();
 		}else{
 			$(target).fadeIn();
 		}
-	});
+	};
 })

@@ -1,0 +1,57 @@
+a {
+	color: #B0924E !important;
+}
+.top-search #trigger-overlay {
+	background: #B0924E !important;
+}
+.search-row {
+	background: #B0924E !important;
+}
+.site-title a {
+	color: #B0924E !important;
+}
+.secondary-navigation li:hover > a {
+	background-color: #B0924E !important;
+}
+.flex-caption {
+	background: #B0924E !important;
+}
+#controlNav .owl-item.synced {
+	border: 3px solid #B0924E !important;
+}
+.loading:before  { 
+	color: #B0924E !important; 
+}
+.entry-title a:hover {
+	color: #B0924E !important;
+}
+.entry-meta span a:hover * {
+	color: #B0924E !important;
+}
+.btn-read-more {
+	background: #B0924E !important;
+}
+.posts-navigation .nav-previous a:hover {
+	background-color: #B0924E !important;
+}
+.related-posts ul li a:hover {
+	color: #B0924E !important;
+}
+.comments-area .comment-meta .comment-metadata {
+	background: #B0924E !important;
+}
+.comments-area .reply .comment-reply-link:hover {
+	background: #B0924E !important;
+}
+.comments-area p.form-submit input:hover {
+	background: #B0924E !important;
+}
+.search-form .search-submit {
+	background: #B0924E !important;
+}
+.widget ul li a:hover {
+	color: #B0924E !important;
+}
+.tagcloud a:hover {
+	background: #B0924E !important;
+}
