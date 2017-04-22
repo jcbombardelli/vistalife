@@ -34,11 +34,13 @@
                 </div>
                 <div class="col-md-5 col-xs-12">
                     <div>
-                        <h3 class="center">ASSINE NOSSA NEWSLETTER!</h3>
+                        <h3 class="center">ASSINE NOSSA NEWSLETTER</h3>
                     </div>
                     <span class="center">
-                        <form>
-                            <input type="email" name="email" placeholder="Digite seu e-mail">
+                        <form action="https://brunogeronimo.us5.list-manage.com/subscribe/post" method="POST">
+                            <input name="u" value="784fb3e969cfb0aac81ad2971" type="hidden">
+                            <input name="id" value="ed50d59977" type="hidden">
+                            <input type="email" name="MERGE0" placeholder="Digite seu e-mail">
                             <input class="btn btn-blue" type="submit" value="Enviar">
                         </form>
                     </span>

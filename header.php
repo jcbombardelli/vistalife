@@ -42,7 +42,7 @@ $linkPath = (is_home() ? "" : "/");
 
         <header>
             <nav class="navbar navbar-default custom-navbar vistalife-navbar">
-                <div class="container">
+                <div class="vistalife-navigator container">
                     <div class="col-md-3">
                         <div class="navbar-header">
                             <a class="navbar-brand" href="/">

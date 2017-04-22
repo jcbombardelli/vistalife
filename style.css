@@ -90,6 +90,11 @@ h1, h2, h3, h4, h5, h6{
 .footer li{
     list-style-type: none;
 }
+
+.footer a{
+    color: #FFFFFF;
+}
+
 .footer input{
     color: #000000;
 }
@@ -123,6 +128,11 @@ body {
 }
 
 header {
+   /* background-image: url(assets/img/background.jpg);
+    background-size: cover;
+    background-position: top center;
+    height: auto;
+    padding-bottom: 2em;*/
     background-image: url(assets/img/background.jpg);
     background-size: cover;
     background-position: top center;
@@ -222,8 +232,16 @@ header h1 {
   background-color: #1B2C3F !important;
 }
 
+.vistalife-navbar-mobile{
+  background-color: #1B2C3F !important;
+}
+
 .vistalife-navbar .navbar-nav > li > a {
   color: #d6f14b;
+}
+
+.vistalife-navigator{
+    margin-bottom: 1em;
 }
 
 .navbar-collapse{
@@ -269,6 +287,7 @@ header h1 {
     color: #FFF;
     text-align: center;
     width: 100%;
+    margin-top: 5em;
     border-radius: 5px;
     position: absolute;
     top: 50%;
@@ -336,4 +355,28 @@ footer {
 
 footer address:last-child {
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 700px){
+    header {
+        background-image: url(assets/img/background.jpg);
+        background-size: cover;
+        background-position: top center;
+        height: auto;
+        padding-bottom: 2em;
+    }
+    .topCasaFina-banner {
+        color: #FFF;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        margin-top: 5em;
+
+        border-radius: 0px;
+        position: relative;
+        top: 0%;
+        left: 0%;
+        transform: translate(0%, 0%);
+        transition: 0s;
+    }
 }

@@ -1,14 +1,26 @@
+function adaptMenu(windowObject){
+	if ($(windowObject).width() < 700){
+	  $('.vistalife-navbar').removeClass('navbar-fixed-top');
+	  $(".vistalife-navbar").addClass("vistalife-navbar-mobile vistalife-navbar-fixed");
+	}else{
+	  $(".vistalife-navbar").removeClass("vistalife-navbar-mobile vistalife-navbar-fixed");
+	}
+}
+
 $(document).ready(function(){
-	$('.nav a').on('click', function(){
-	    $('.navbar-toggle').click() //bootstrap 3.x by Richard
+	adaptMenu(window);
+	$(window).resize(function(){
+		adaptMenu(this);
 	});
 
 	$(window).scroll(function () {
-		if ($(window).scrollTop() > 280) {
-		  $('.vistalife-navbar').addClass('navbar-fixed-top vistalife-navbar-fixed');
-		}
-		if ($(window).scrollTop() < 281) {
-		  $('.vistalife-navbar').removeClass('navbar-fixed-top vistalife-navbar-fixed');
+		if ($(window).width() >= 700){
+			if ($(window).scrollTop() > 100) {
+			  $('.vistalife-navbar').addClass('navbar-fixed-top vistalife-navbar-fixed');
+			}
+			if ($(window).scrollTop() < 101) {
+			  $('.vistalife-navbar').removeClass('navbar-fixed-top vistalife-navbar-fixed');
+			}
 		}
 	});
 
