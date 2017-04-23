@@ -7,9 +7,25 @@ function adaptMenu(windowObject){
 	}
 }
 
+var globalVal = 1;
+function changeImage(pos){
+	if (pos > 2){
+		globalVal = pos = 1;
+	}
+	$('header').fadeTo('slow', 0.3, function()
+	{
+	    $(this).css('background-image', "url(/wp-content/themes/blank-wordpress-theme/assets/img/background-"+globalVal+".jpg)");
+	}).fadeTo('slow', 1);
+	setTimeout(function(){
+		changeImage(++globalVal);
+	}, 10000);
+}
+
 $(document).ready(function(){
 	adaptMenu(window);
 	smoothScroll.init();
+	changeImage(1);
+
 	$(window).resize(function(){
 		adaptMenu(this);
 	});

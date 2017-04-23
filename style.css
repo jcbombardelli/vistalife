@@ -20,6 +20,8 @@
     src: url(assets/fonts/klavika/klavikaregular-plain.otf);
 }
 
+.margin-4em{margin-bottom: 4em;}
+
 input[type="button"], input[type="submit"]{
     color: #FFF;
     background-color: #0A99D2;
@@ -52,12 +54,13 @@ textarea{
     justify-content: center;
 }
 
-.howItWorks section{
-    margin-bottom: 2.5em;
+.howItWorks{
+    margin-top: 3em !important;
+    margin-bottom: 3em;
 }
 
 .topCasaFina-title{
-    margin-bottom: 1.5em !important;
+    margin-bottom: 2em !important;
 }
 
 .center{
@@ -133,6 +136,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .panel-group{
+    margin-top: 5em;
     margin-bottom: 10em;
 }
 
@@ -153,12 +157,12 @@ body {
 }
 
 header {
-   /* background-image: url(assets/img/background.jpg);
+   /* background-image: url(assets/img/background-1.jpg);
     background-size: cover;
     background-position: top center;
     height: auto;
     padding-bottom: 2em;*/
-    background-image: url(assets/img/background.jpg);
+    background-image: url(assets/img/background-1.jpg);
     background-size: cover;
     background-position: top center;
     height: 100%;
@@ -188,7 +192,8 @@ header h1 {
 }
 
 .our-planning{
-    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 4em;
 }
 
 .post-padding{
@@ -308,6 +313,11 @@ header h1 {
     text-align: justify;
 }
 
+.thumbnail img{
+    width: 7em;
+    height: 7em;
+}
+
 .titulo-depoimentos {
     background-color: #0275D8;
     padding-top: 25px;
@@ -381,7 +391,7 @@ footer address:last-child {
 
 @media screen and (max-width: 700px){
     header {
-        background-image: url(assets/img/background.jpg);
+        background-image: url(assets/img/background-1.jpg);
         background-size: cover;
         background-position: top center;
         height: auto;

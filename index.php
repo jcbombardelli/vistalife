@@ -68,20 +68,19 @@ query_posts('posts_per_page=2');
     </section>
 
     <div class="jumbotron" id="ourPlanning">
-        <div class="container content-padding our-planning">
+        <div class="container our-planning">
             <h2 class="titulo mainTitle">NOSSO PLANEJAMENTO</h2>
             <div class="col-md-12 text-center">
                 <p>Nosso planejamento financeiro aborda diversos assuntos, aplicados com inteligência para que seu planos se tornem reais.</p>
-            </div>
-            <div class="col-md-12">
+                <div class="margin-4em"></div>
                 <img src="<?php bloginfo('template_url'); ?>/assets/img/solucao.png" class="img-solution img-responsive" alt="">
             </div>
         </div>
     </div>
 
     <section class="container" id="nossos-diferenciais">
-        <h2 class="titulo">DIFERENCIAIS</h2>
         <div class="row panel-group" id="group-diferenciais">
+        <h2 class="titulo">DIFERENCIAIS</h2>
             <div class="col-md-4 col-xs-12">
                 <div class="panel-heading" style="background-color: #B0924E; color: white" align="center">
                     <h4>CFP® - Certified Financial Planner</h1>
