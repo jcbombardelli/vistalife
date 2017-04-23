@@ -12,9 +12,9 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 query_posts('posts_per_page=2');
 ?>
 
-    <section class="container howItWorks" id="funcionamento">
+    <section class="container howItWorks">
         <div class="row">
-            <h2 data-toogle="collapse" data-target="p" class="titulo topCasaFina-title">COMO FUNCIONA</h2>
+            <h2 id="funcionamento" data-toogle="collapse" data-target="p" class="titulo topCasaFina-title">COMO FUNCIONA</h2>
             <div class="col-md-3 col-xs-13">
                 <figure class="thumbnail">
                     <img src="<?php bloginfo('template_url'); ?>/assets/img/goldIcon001.png" alt="" width="50%" height="50%">
@@ -117,7 +117,7 @@ query_posts('posts_per_page=2');
         </div>
     </section>
 
-    <div class="jumbotron">
+    <div class="jumbotron" id="blog">
         <div class="post-padding">
             <h2 class="title">BLOG</h2>
 
@@ -161,7 +161,7 @@ query_posts('posts_per_page=2');
     </div>
 
     <div id="contact-form" class="jumbotron contato">
-        <a class="center fadein-item" target="#contato" href="#"><h2>Ficou Interessado? Clique aqui!</h2></a>
+        <a id="contact-form-link" class="center fadein-item" target="#contato" href="#"><h2>Ficou Interessado? Clique aqui!</h2></a>
         <section id="contato" class="div-center container content-padding" style="display: none;">
             <div class="col-md-6">
                 <h2>Contato</h2>

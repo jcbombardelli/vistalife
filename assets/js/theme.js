@@ -9,6 +9,7 @@ function adaptMenu(windowObject){
 
 $(document).ready(function(){
 	adaptMenu(window);
+	smoothScroll.init();
 	$(window).resize(function(){
 		adaptMenu(this);
 	});
@@ -33,6 +34,13 @@ $(document).ready(function(){
 		e.preventDefault();
 		contactFunction(this);
 	});
+
+	$(".act-letstalk").click(function(e){
+		// e.preventDefault();
+		// var anchor = document.querySelector('#contact-form-link');
+		// smoothScroll.animateScroll(anchor);
+		$("#contact-form-link").click();
+	})
 
 	var contactFunction = function(object){
 		var target = $(object).attr("target");

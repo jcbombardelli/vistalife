@@ -74,6 +74,31 @@ h1, h2, h3, h4, h5, h6{
     font-family: klavikaBold;
 }
 
+
+.topCasaFina-banner {
+    color: #FFF;
+    text-align: center;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s;
+}
+
+.topCasaFina-banner h3{
+    font-family: klavika;
+    font-size: 2.4em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+.btn-moreabout{
+    width:10em;
+}
+
 *{
     font-family: klavika;
 }
@@ -237,7 +262,7 @@ header h1 {
 }
 
 .vistalife-navbar .navbar-nav > li > a {
-  color: #d6f14b;
+  color: #ffffff;
 }
 
 .vistalife-navigator{
@@ -283,19 +308,6 @@ header h1 {
     text-align: justify;
 }
 
-.topCasaFina-banner {
-    color: #FFF;
-    text-align: center;
-    width: 100%;
-    margin-top: 5em;
-    border-radius: 5px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: .3s;
-}
-
 .titulo-depoimentos {
     background-color: #0275D8;
     padding-top: 25px;
@@ -309,10 +321,6 @@ header h1 {
     background-color: #B0924E;
     color: white;
     margin-top: 1.5em;
-}
-
-.btn-moreabout{
-    margin-top: 5em;
 }
 
 .titulo {
@@ -347,14 +355,28 @@ header h1 {
     padding-bottom: 2em;
 }
 
+.menuBar{
+    margin-top: 0em;
+}
+
 footer {
     background-color: #1B2C3F;
     color: #FFF;
-    padding: 20px;
+    padding: 3em;
+}
+
+footer h3{
+    margin-top: 0em;
 }
 
 footer address:last-child {
     margin-bottom: 0;
+}
+
+.footer label, .footer a{
+    font-family: klavika;
+    margin-bottom: 0em;
+    margin-top: 1em;
 }
 
 @media screen and (max-width: 700px){

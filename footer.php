@@ -24,15 +24,16 @@
             <div class="row footer">
                 <div class="menuBar col-md-7 col-xs-8">
                     <ul>
+                        <li><h3>VistaLife - Planejamento Financeiro</h4></li>
                         <li><a href="/">Home</a></li>
-                        <li><a href="<?=$linkPath?>#funcionamento">Como Funciona</a></li>
-                        <li><a href="<?=$linkPath?>#ourPlanning">Nosso Planejamento</a></li>
-                        <li><a href="<?=$linkPath?>#nossos-diferenciais">Diferenciais</a></li>
-                        <li><a href="http://blog.temp.bruno.works">Blog</a></li>
-                        <li><a href="<?=$linkPath?>#contact-form">Contato</a></li>
+                        <li><a data-scroll href="<?=$linkPath?>#funcionamento">Como Funciona</a></li>
+                        <li><a data-scroll href="<?=$linkPath?>#ourPlanning">Nosso Planejamento</a></li>
+                        <li><a data-scroll href="<?=$linkPath?>#nossos-diferenciais">Diferenciais</a></li>
+                        <li><a data-scroll href="<?=$linkPath?>#blog">Blog</a></li>
+                        <li><a data-scroll href="<?=$linkPath?>#contact-form">Contato</a></li>
                     </ul>                    
                 </div>
-                <div class="col-md-5 col-xs-12">
+                <div class="menuBar col-md-5 col-xs-12">
                     <div>
                         <h3 class="center">ASSINE NOSSA NEWSLETTER</h3>
                     </div>
@@ -43,8 +44,22 @@
                             <input type="email" name="MERGE0" placeholder="Digite seu e-mail">
                             <input class="btn btn-blue" type="submit" value="Enviar">
                         </form>
+                        <div class="center">
+                            <div class="center">
+                                <label>Telefone: (11) 3087-9170</label>
+                            </div>
+                            <div class="center">
+                                <a href="mailto:falecom@vistalife.com.br">falecom@vistalife.com.br</a>
+                            </div>
+                        </div>
                     </span>
                 </div>
+               <!--  <div class="col-md-4 col-xs-5">
+                    <div class="center">
+                    </div>
+                    <div class="center">
+                    </div>
+                </div> -->
             </div>
         </footer>
 

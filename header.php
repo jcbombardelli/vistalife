@@ -27,6 +27,7 @@ $linkPath = (is_home() ? "" : "/");
 
         <script src="<?php bloginfo('template_url'); ?>/assets/js/jquery.js"></script>
         <script src="<?php bloginfo('template_url'); ?>/assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/assets/js/smooth-scroll.js"></script>
         <script src="<?php bloginfo('template_url'); ?>/assets/js/theme.js"></script>
         <script src="<?php bloginfo('template_url'); ?>/inc/js/libs/modernizr-2.6.2.min.js"></script>
 
@@ -67,18 +68,18 @@ $linkPath = (is_home() ? "" : "/");
                         <!-- Itens da navbar -->
                         <div id="navbar" class="navbar-collapse collapse">
                             <ul class="nav navbar-nav">
-                                <li><a href="<?=$linkPath?>#funcionamento" class="itemMenu">Como Funciona</a></li>
-                                <li><a href="<?=$linkPath?>#ourPlanning" class="itemMenu">Nosso Planejamento</a></li>
-                                <li><a href="<?=$linkPath?>#nossos-diferenciais" class="itemMenu">Diferenciais</a></li>
-                                <li><a href="http://blog.temp.bruno.works" class="itemMenu">Blog</a></li>
-                                <li><a href="<?=$linkPath?>#contact-form" class="itemMenu">Contato</a></li>
-                                <li><button type="button" class="btn btn-gold btn-lg">Vamos Conversar?</button></li>
+                                <li><a data-scroll href="<?=$linkPath?>#funcionamento" class="itemMenu">Como Funciona</a></li>
+                                <li><a data-scroll href="<?=$linkPath?>#ourPlanning" class="itemMenu">Nosso Planejamento</a></li>
+                                <li><a data-scroll href="<?=$linkPath?>#nossos-diferenciais" class="itemMenu">Diferenciais</a></li>
+                                <li><a data-scroll href="<?=$linkPath?>#blog" class="itemMenu">Blog</a></li>
+                                <li><a data-scroll href="<?=$linkPath?>#contact-form" class="itemMenu">Contato</a></li>
+                                <li><a data-scroll href="<?=$linkPath?>#contact-form" type="button" class="btn btn-gold btn-lg act-letstalk">Vamos Conversar?</a></li>
                             </ul>
                         </div><!-- fim .nav-collapse -->
                     </div>
                 </div>
             </nav>
-            <section class="container howItWorks" id="funcionamento">
+            <section class="container howItWorks">
                 <div class="topCasaFina-banner">
                     <h3>Trabalhamos na melhor forma de estruturar suas finanças</h3>
                     <h3>para que seus sonhos se tornem realidade.</h3>
