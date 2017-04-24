@@ -8,17 +8,23 @@ function adaptMenu(windowObject){
 }
 
 var globalVal = 1;
-function changeImage(pos){
-	if (pos > 2){
+var maxPics = 2;
+function changeImage(pos, autoChange){
+	if (autoChange === undefined){
+		autoChange = true;
+	}
+	if (pos > maxPics){
 		globalVal = pos = 1;
 	}
 	$('header').fadeTo('slow', 0.3, function()
 	{
 	    $(this).css('background-image', "url(/wp-content/themes/blank-wordpress-theme/assets/img/background-"+globalVal+".jpg)");
 	}).fadeTo('slow', 1);
-	setTimeout(function(){
-		changeImage(++globalVal);
-	}, 10000);
+	if (autoChange){
+		setTimeout(function(){
+			changeImage(++globalVal);
+		}, 20000);
+	}
 }
 
 $(document).ready(function(){
@@ -28,6 +34,26 @@ $(document).ready(function(){
 
 	$(window).resize(function(){
 		adaptMenu(this);
+
+	});
+
+	$(".left-pointer").click(function(e){
+		e.preventDefault();
+		if (globalVal === 1){
+			globalVal = maxPics;
+		}else{
+			--globalVal;
+		}
+		changeImage(globalVal, false);
+	});
+	$(".right-pointer").click(function(e){
+		e.preventDefault();
+		if (globalVal >= maxPics){
+			globalVal = 1;
+		}else{
+			globalVal++;
+		}
+		changeImage(globalVal, false);
 	});
 
 	$(window).scroll(function () {

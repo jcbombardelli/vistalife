@@ -28,6 +28,7 @@ $linkPath = (is_home() ? "" : "/");
         <script src="<?php bloginfo('template_url'); ?>/assets/js/jquery.js"></script>
         <script src="<?php bloginfo('template_url'); ?>/assets/bootstrap/js/bootstrap.min.js"></script>
         <script src="<?php bloginfo('template_url'); ?>/assets/js/smooth-scroll.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/assets/js/jssor.mini.js"></script>
         <script src="<?php bloginfo('template_url'); ?>/assets/js/theme.js"></script>
         <script src="<?php bloginfo('template_url'); ?>/inc/js/libs/modernizr-2.6.2.min.js"></script>
 
@@ -79,6 +80,10 @@ $linkPath = (is_home() ? "" : "/");
                     </div>
                 </div>
             </nav>
+            <section class="pointer">
+                <a class="right-pointer" href="#"><</a>
+                <a class="left-pointer" href="#">></a>
+            </section>
             <section class="container howItWorks">
                 <div class="topCasaFina-banner">
                     <h3>Trabalhamos na melhor forma de estruturar suas finanças</h3>
