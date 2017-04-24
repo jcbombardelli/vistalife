@@ -9,12 +9,15 @@ function adaptMenu(windowObject){
 
 var globalVal = 1;
 var maxPics = 2;
+var changeTime = 10000;
 function changeImage(pos, autoChange){
 	if (autoChange === undefined){
 		autoChange = true;
 	}
 	if (pos > maxPics){
 		globalVal = pos = 1;
+	}else{
+		globalVal = pos;
 	}
 	$('header').fadeTo('slow', 0.3, function()
 	{
@@ -23,14 +26,16 @@ function changeImage(pos, autoChange){
 	if (autoChange){
 		setTimeout(function(){
 			changeImage(++globalVal);
-		}, 20000);
+		}, changeTime);
 	}
 }
 
 $(document).ready(function(){
 	adaptMenu(window);
 	smoothScroll.init();
-	changeImage(1);
+	setTimeout(function(){
+		changeImage(2);
+	}, changeTime)
 
 	$(window).resize(function(){
 		adaptMenu(this);

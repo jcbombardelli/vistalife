@@ -108,6 +108,11 @@ h1, h2, h3, h4, h5, h6{
 
 .disclaimer{
     background-color: #1B2C3F;
+    color: #FFFFFF;
+    text-align: justify;
+    padding-right: 7em;
+    padding-left: 7em;
+    margin-bottom: 3em;
 }
 
 .footer{
@@ -144,8 +149,12 @@ h1, h2, h3, h4, h5, h6{
     text-align: center;
 }
 
+.contato h2, .contato h4{
+    color: #FFFFFF;
+}
+
 .contato {
-    /*background-image: url(assets/img/tablet.jpeg);*/
+    background-image: url(assets/img/banner-talkwithus.jpg);
     background-size: cover;
     background-position: top center;
     background-color: #F5F5F5;
