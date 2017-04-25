@@ -122,38 +122,45 @@ query_posts('posts_per_page=2');
 
             <span class="postArea">
                 <?php 
-                if (have_posts()) : ?>
+                    $content = file_get_contents('http://blog.temp.bruno.works/wp-json/wp/v2/posts/?per_page=2');
+                    $jsonContent = json_decode($content);
+                if (count($jsonContent) > 0){ ?>
                     <div class="row div-center">
 
                         <?php 
-                        while (have_posts()) : the_post(); ?>
+                        foreach ($jsonContent as $post) {
+                            $postArray = (array)$post;
+                            $postArray['_links'] = (array)$postArray['_links'];
+                            $thumbLink = file_get_contents($postArray['_links']['wp:featuredmedia'][0]->href);
+                            $thumbLink = json_decode($thumbLink, true);
+                        ?>
 
-                            <div <?php post_class("col-md-5 col-xs-12 post-style") ?> id="post-<?php the_ID(); ?>">
+                            <div class="col-md-5 col-xs-12 post-style" id="post-<?=$post->id?>">
                                 <div class="col-md-5 col-xs-12 post-thumb">
-                                    <img class="post-img" src="<?php the_post_thumbnail_url() ?>">
+                                    <img class="post-img" src="<?=$thumbLink['media_details']['sizes']['medium']['source_url']?>">
                                 </div>
                                 <div class="post-description col-md-7 col-xs-12">
-                                    <h3 class="title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3 class="title">
-                                    <?php the_excerpt(); ?>
+                                    <h3 class="title"><a href="<?=$post->link ?>" rel="bookmark" title="<?=$post->title->rendered ?>"><?=$post->title->rendered ?></a></h3 class="title">
+                                    <?=$post->excerpt->rendered ?>
                                 </div>
                                 <div class="post-buttons col-md-7 col-xs-12">
-                                    <a href="<?php the_permalink() ?>" class="btn btn-gold btn-lg btn-loadpost">SAIBA MAIS</a>
+                                    <a href="<?=$post->link ?>" class="btn btn-gold btn-lg btn-loadpost">SAIBA MAIS</a>
                                 </div>
                             </div>
 
                         <?php 
-                        endwhile; ?>
+                        } ?>
                     </div>
 
                 <?php 
-                else : ?>
+                }else { ?>
 
                     <h2 class="center">Not Found</h2>
                     <p class="center">Sorry, but you are looking for something that isn't here.</p>
                     <?php get_search_form(); ?>
 
                 <?php 
-                endif; ?>
+                } ?>
             </span>
         </div>
         
