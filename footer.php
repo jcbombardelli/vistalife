@@ -20,18 +20,10 @@
 
         <?php wp_footer(); ?>
         <footer>
-            <div class="disclaimer">
-                A Vista Life está empenhada em oferecer informações de valor aos investidores e aos que desejam cuidar melhor de seu patrimônio. Tem como objetivo estimular o aprendizado e a discussão, para que as pessoas consigam tomar decisões com mais consciência e segurança. 
-
-    Entre os temas abordados estão os investimentos em si (renda fixa, ações, ativos imobiliários, fundos, previdência, etc.), a administração financeira pessoal e familiar, a gestão de riscos, o planejamento de aposentadoria, o planejamento tributário e o planejamento sucessório. Também terão vez os assuntos relacionados à macroeconomia (inflação, juros, desemprego, etc.) e ao ambiente político.
-
-    A Vista Life dá muita importância para que as informações sejam transmitidas com qualidade, isenção e linguagem fácil, observando, no entanto, que não faz qualquer tipo de recomendação, indicação e/ou aconselhamento de investimento, não se responsabilizando por perdas, danos, custos e lucros cessantes.
-                
-            </div>
             <div class="row footer">
                 <div class="menuBar col-md-7 col-xs-8">
                     <ul>
-                        <li><h3>VistaLife - Planejamento Financeiro</h4></li>
+                        <li><h3>VistaLife - Planejamento Financeiro</h3></li>
                         <li><a href="/">Home</a></li>
                         <li><a data-scroll href="<?=$linkPath?>#funcionamento">Como Funciona</a></li>
                         <li><a data-scroll href="<?=$linkPath?>#ourPlanning">Nosso Planejamento</a></li>
@@ -69,6 +61,15 @@
                 </div> -->
             </div>
         </footer>
+        <div class="disclaimer-background">
+            <div class="disclaimer">
+                A Vista Life está empenhada em oferecer informações de valor aos investidores e aos que desejam cuidar melhor de seu patrimônio. Tem como objetivo estimular o aprendizado e a discussão, para que as pessoas consigam tomar decisões com mais consciência e segurança. 
+
+                Entre os temas abordados estão os investimentos em si (renda fixa, ações, ativos imobiliários, fundos, previdência, etc.), a administração financeira pessoal e familiar, a gestão de riscos, o planejamento de aposentadoria, o planejamento tributário e o planejamento sucessório. Também terão vez os assuntos relacionados à macroeconomia (inflação, juros, desemprego, etc.) e ao ambiente político.
+
+                A Vista Life dá muita importância para que as informações sejam transmitidas com qualidade, isenção e linguagem fácil, observando, no entanto, que não faz qualquer tipo de recomendação, indicação e/ou aconselhamento de investimento, não se responsabilizando por perdas, danos, custos e lucros cessantes.
+            </div>
+        </div>
 
     </body>
 

@@ -17,7 +17,7 @@ query_posts('posts_per_page=2');
             <h2 id="funcionamento" data-toogle="collapse" data-target="p" class="titulo topCasaFina-title">COMO FUNCIONA</h2>
             <div class="col-md-3 col-xs-13">
                 <figure class="thumbnail">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/img/goldIcon001.png" alt="" width="50%" height="50%">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/icon_01.png" alt="" width="50%" height="50%">
                     <figcaption class="caption">
                         <h3 class="titulo">Conversar</h3>
                         <p>
@@ -30,7 +30,7 @@ query_posts('posts_per_page=2');
             <div class="col-md-3 col-xs-13">
 
                 <figure class="thumbnail">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/img/goldIcon001.png" alt="" width="50%" height="50%">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/icon_02.png" alt="" width="50%" height="50%">
                     <figcaption class="caption">
                         <h3 class="titulo">Planejar</h3>
                         <p>
@@ -42,7 +42,7 @@ query_posts('posts_per_page=2');
             <div class="col-md-3 col-xs-13">
 
                 <figure class="thumbnail">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/img/goldIcon001.png" alt="" width="50%" height="50%">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/icon_03.png" alt="" width="50%" height="50%">
                     <figcaption class="caption">
                         <h3 class="titulo">Implementar</h3>
                         <p>
@@ -54,7 +54,7 @@ query_posts('posts_per_page=2');
             <div class="col-md-3 col-xs-13">
 
                 <figure class="thumbnail">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/img/goldIcon001.png" width="50%" height="50%" alt="">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/icon_04.png" width="50%" height="50%" alt="">
                     <figcaption class="caption">
                         <h3 class="titulo">Acompanhar</h3>
                         <p>

@@ -19,10 +19,10 @@ function changeImage(pos, autoChange){
 	}else{
 		globalVal = pos;
 	}
-	$('header').fadeTo('slow', 0.3, function()
-	{
-	    $(this).css('background-image', "url(/wp-content/themes/blank-wordpress-theme/assets/img/background-"+globalVal+".jpg)");
-	}).fadeTo('slow', 1);
+	$("header").css('background-image', "url(/wp-content/themes/blank-wordpress-theme/assets/img/background-"+globalVal+".jpg)");
+	// $('header').fadeTo('slow', 0.3, function()
+	// {
+	// }).fadeTo('slow', 1);
 	if (autoChange){
 		setTimeout(function(){
 			changeImage(++globalVal);
