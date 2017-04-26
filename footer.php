@@ -41,7 +41,7 @@
                             <input name="u" value="784fb3e969cfb0aac81ad2971" type="hidden">
                             <input name="id" value="ed50d59977" type="hidden">
                             <input type="email" name="MERGE0" placeholder="Digite seu e-mail">
-                            <input class="btn btn-blue" type="submit" value="Enviar">
+                            <input class="btn btn-gold btn-lg" type="submit" value="Enviar">
                         </form>
                         <div class="center">
                             <div class="center">

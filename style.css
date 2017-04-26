@@ -27,7 +27,6 @@ input[type="button"], input[type="submit"]{
     background-color: #0A99D2;
     border-color: #0A99D2;
     width: 100%;
-    margin-top: 1em;
 }
 
 input[type="text"], input[type="email"], input[type="phone"]{
@@ -98,6 +97,10 @@ h1, h2, h3, h4, h5, h6{
     margin-bottom: 0em;
 }
 
+.topCasaFina-banner button{
+    margin-top: 1.5em;
+}
+
 .btn-moreabout{
     width:10em;
 }
@@ -140,8 +143,6 @@ h1, h2, h3, h4, h5, h6{
 }
 .footer input[type="submit"]{
     width: 20%;
-    height: 3em;
-    margin-top: 0em;
 }
 
 .panel-group{
@@ -268,11 +269,10 @@ header h1 {
 .post-buttons .btn-loadpost{
     border-radius: 0 !important;
     min-width: 10em;
+    margin-top: 1.5em;
 }
 
 .post-img{
-    /*width: 15.3em;
-    height: 20em;*/
     width: inherit;
     height: inherit;
 }
@@ -298,7 +298,7 @@ header h1 {
   background-color: #1B2C3F !important;
 }
 
-.vistalife-navbar .navbar-nav > li > a {
+.vistalife-navbar .navbar-nav > li > a{
   color: #ffffff;
 }
 
@@ -360,9 +360,10 @@ header h1 {
 }
 
 .btn-gold {
-    background-color: #B0924E;
-    color: white;
-    margin-top: 1.5em;
+    background-color: #B0924E !important;
+    border-color: #B0924E !important;
+    color: white !important;
+    /*margin-top: 1.5em;*/
 }
 
 .titulo {

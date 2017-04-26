@@ -74,7 +74,7 @@ $linkPath = (is_home() ? "" : "/");
                                 <li><a data-scroll href="<?=$linkPath?>#nossos-diferenciais" class="itemMenu">Diferenciais</a></li>
                                 <li><a data-scroll href="<?=$linkPath?>#blog" class="itemMenu">Blog</a></li>
                                 <li><a data-scroll href="<?=$linkPath?>#contact-form" class="itemMenu">Contato</a></li>
-                                <li><a data-scroll href="<?=$linkPath?>#contact-form" class="btn btn-gold btn-lg act-letstalk">Vamos Conversar?</a></li>
+                                <li><a data-scroll href="<?=$linkPath?>#contact-form" class="itemMenu btn btn-gold btn-lg act-letstalk">Vamos Conversar?</a></li>
                             </ul>
                         </div><!-- fim .nav-collapse -->
                     </div>

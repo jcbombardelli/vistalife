@@ -186,7 +186,7 @@ query_posts('posts_per_page=2');
                         <div>
                             <textarea name="message" placeholder="Deixe sua mensagem!"></textarea>
                         </div>
-                        <input type="submit" class="btn btn-primary" value="Enviar">
+                        <input type="submit" class="btn btn-gold btn-lg" value="Enviar">
                     </div>
                 </form>
             </div>
