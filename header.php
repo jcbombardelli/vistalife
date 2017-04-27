@@ -69,7 +69,7 @@ $linkPath = (is_home() ? "" : "/");
                         <!-- Itens da navbar -->
                         <div id="navbar" class="navbar-collapse collapse">
                             <ul class="nav navbar-nav">
-                                <li><a data-scroll href="<?=$linkPath?>#funcionamento" class="itemMenu">Como Funciona</a></li>
+                                <li><a href="<?=$linkPath?>#funcionamento" class="itemMenu">Como Funciona</a></li>
                                 <li><a data-scroll href="<?=$linkPath?>#ourPlanning" class="itemMenu">Nosso Planejamento</a></li>
                                 <li><a data-scroll href="<?=$linkPath?>#nossos-diferenciais" class="itemMenu">Diferenciais</a></li>
                                 <li><a data-scroll href="<?=$linkPath?>#blog" class="itemMenu">Blog</a></li>

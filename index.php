@@ -13,8 +13,8 @@ query_posts('posts_per_page=2');
 ?>
 
     <section class="container howItWorks">
-        <div class="row">
-            <h2 id="funcionamento" data-toogle="collapse" data-target="p" class="titulo topCasaFina-title">COMO FUNCIONA</h2>
+        <div class="row" id="funcionamento">
+            <h2 class="titulo topCasaFina-title">COMO FUNCIONA</h2>
             <div class="col-md-3 col-xs-13">
                 <figure class="thumbnail">
                     <img src="<?php bloginfo('template_url'); ?>/assets/img/icon_01.png" alt="" width="50%" height="50%">
