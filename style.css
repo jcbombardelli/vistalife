@@ -45,6 +45,12 @@ textarea{
     margin-top: 1em;
 }
 
+
+
+.contato input, .contato textarea{
+    margin-top: 2em;
+}
+
 .div-center{
     align-items: center;
     display: flex;
@@ -159,6 +165,10 @@ h1, h2, h3, h4, h5, h6{
 
 .contato h2, .contato h4{
     color: #FFFFFF;
+}
+
+.contato h4{
+    font-family: klavika;
 }
 
 #blog{

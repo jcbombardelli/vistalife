@@ -21,7 +21,7 @@ query_posts('posts_per_page=2');
                     <figcaption class="caption">
                         <h3 class="titulo">Conversar</h3>
                         <p>
-                            É conversando que se entende. Por isso, queremos ouvir um pouco mais sobre a sua história e quais são seus projetos, objetivos e prioridades.
+                            É conversando que se entende. Por isso, queremos ouvir um pouco mais sobre a sua história e quais são suas necessidades, objetivos e prioridades.
                         </p>
                     </figcaption>
                 </figure>
@@ -46,7 +46,7 @@ query_posts('posts_per_page=2');
                     <figcaption class="caption">
                         <h3 class="titulo">Implementar</h3>
                         <p>
-                            Esse é o momento de colocar em prática nossas ações para que seus objetivos se tornem realidade.
+                            Esse é o momento de colocar em prática todas as ações planejadas a fim de que você consiga atingir suas metas.
                         </p>
                     </figcaption>
                 </figure>
@@ -58,7 +58,7 @@ query_posts('posts_per_page=2');
                     <figcaption class="caption">
                         <h3 class="titulo">Acompanhar</h3>
                         <p>
-                            Monitoramos de perto para garantir que seus planos se mantenham nos eixos.
+                            Monitoramos com atenção para garantir que seus planos se mantenham nos eixos.
                         </p>
                     </figcaption>
                 </figure>
@@ -170,21 +170,24 @@ query_posts('posts_per_page=2');
         <a id="contact-form-link" class="center fadein-item" target="#contato" href="#"><h2>Ficou Interessado? Clique aqui!</h2></a>
         <section id="contato" class="div-center container content-padding" style="display: none;">
             <div class="col-md-6">
-                <h2>Contato</h2>
-                <h4>Entre em contato conosco</h4>
+                <span class="center">
+                    <h2>Contato</h2>
+                    <h4>Queremos conversar com você!</h4>
+                    <h4>Deixe sua mensagem que entraremos em contato.</h4>
+                </span>
                 <form action="https://formspree.io/hi@bruno.works" method="POST" target="_blank">
                     <div class="form-group">
                         <div>
-                            <input type="text" name="name" placeholder="Nome">
+                            <input type="text" required name="name" placeholder="Nome">
                         </div>
                         <div>
-                            <input type="phone" name="phone" placeholder="Telefone">
+                            <input type="phone" required name="phone" placeholder="Telefone">
                         </div>
                         <div>
-                            <input type="email" name="_replyto" placeholder="Email">
+                            <input type="email" required name="_replyto" placeholder="Email">
                         </div>
                         <div>
-                            <textarea name="message" placeholder="Deixe sua mensagem!"></textarea>
+                            <textarea required name="message" placeholder="Deixe sua mensagem!"></textarea>
                         </div>
                         <input type="submit" class="btn btn-gold btn-lg" value="Enviar">
                     </div>
