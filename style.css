@@ -71,11 +71,9 @@ textarea{
     margin-bottom: 5em;
 }
 
-
 h1, h2, h3, h4, h5, h6{
     font-family: klavikaBold;
 }
-
 
 .topCasaFina-banner {
     color: #FFF;
@@ -123,8 +121,13 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .footer{
-    padding-right: 7em;
-    padding-left: 7em;
+    padding-right: 4em;
+    padding-left: 4em;
+}
+
+.centralized-content{
+    padding-right: 4em;
+    padding-left: 4em;
 }
 
 .footer li{
@@ -139,7 +142,7 @@ h1, h2, h3, h4, h5, h6{
     color: #000000;
 }
 .footer input[type="email"]{
-    width: 60%;
+    width: 67%;
 }
 .footer input[type="submit"]{
     width: 20%;
@@ -306,12 +309,12 @@ header h1 {
     margin-bottom: 1em;
 }
 
-.navbar-collapse{
+/*.navbar-collapse{
   width: 100%;
-}
+}*/
 
 .navbar-collapse ul{
-  width: 100%;
+  width: auto;
 }
 
 .post-description p{
@@ -455,6 +458,14 @@ footer address:last-child {
         height: auto;
         padding-bottom: 2em;
     }
+    .footer{
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+    .centralized-content{
+        padding-right: 1em;
+        padding-left: 1em;
+    }
     .topCasaFina-banner {
         color: #FFF;
         text-align: center;
@@ -468,5 +479,8 @@ footer address:last-child {
         left: 0%;
         transform: translate(0%, 0%);
         transition: 0s;
+    }
+    .navbar-collapse ul{
+      width: 100%;
     }
 }

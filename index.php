@@ -12,7 +12,7 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 query_posts('posts_per_page=2');
 ?>
 
-    <section class="container howItWorks">
+    <section class="container howItWorks centralized-content">
         <div class="row" id="funcionamento">
             <h2 class="titulo topCasaFina-title">COMO FUNCIONA</h2>
             <div class="col-md-3 col-xs-13">
@@ -78,7 +78,7 @@ query_posts('posts_per_page=2');
         </div>
     </div>
 
-    <section class="container" id="nossos-diferenciais">
+    <section class="centralized-content container" id="nossos-diferenciais">
         <div class="row panel-group" id="group-diferenciais">
         <h2 class="titulo">DIFERENCIAIS</h2>
             <div class="col-md-4 col-xs-12">

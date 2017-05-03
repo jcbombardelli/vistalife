@@ -67,12 +67,12 @@ $linkPath = (is_home() ? "" : "/");
                           </button>
                         </div>
                         <!-- Itens da navbar -->
-                        <div id="navbar" class="navbar-collapse collapse">
+                        <div id="navbar" class="navbar-collapse collapse navbar-vistalife-menu">
                             <ul class="nav navbar-nav">
                                 <li><a href="<?=$linkPath?>#funcionamento" class="itemMenu">Como Funciona</a></li>
                                 <li><a data-scroll href="<?=$linkPath?>#ourPlanning" class="itemMenu">Nosso Planejamento</a></li>
                                 <li><a data-scroll href="<?=$linkPath?>#nossos-diferenciais" class="itemMenu">Diferenciais</a></li>
-                                <li><a data-scroll href="<?=$linkPath?>#blog" class="itemMenu">Blog</a></li>
+                                <li><a href="http://blog.temp.bruno.works/" class="itemMenu">Blog</a></li>
                                 <li><a data-scroll href="<?=$linkPath?>#contact-form" class="itemMenu">Contato</a></li>
                                 <li><a data-scroll href="<?=$linkPath?>#contact-form" class="itemMenu btn btn-gold btn-lg act-letstalk">Vamos Conversar?</a></li>
                             </ul>
@@ -80,10 +80,6 @@ $linkPath = (is_home() ? "" : "/");
                     </div>
                 </div>
             </nav>
-            <section class="pointer">
-                <a class="right-pointer" href="#"><</a>
-                <a class="left-pointer" href="#">></a>
-            </section>
             <section class="container howItWorks">
                 <div class="topCasaFina-banner">
                     <h3>Trabalhamos na melhor forma de estruturar suas finanças</h3>

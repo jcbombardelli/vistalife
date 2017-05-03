@@ -28,7 +28,7 @@
                         <li><a data-scroll href="<?=$linkPath?>#funcionamento">Como Funciona</a></li>
                         <li><a data-scroll href="<?=$linkPath?>#ourPlanning">Nosso Planejamento</a></li>
                         <li><a data-scroll href="<?=$linkPath?>#nossos-diferenciais">Diferenciais</a></li>
-                        <li><a data-scroll href="<?=$linkPath?>#blog">Blog</a></li>
+                        <li><a href="http://blog.temp.bruno.works/">Blog</a></li>
                         <li><a data-scroll href="<?=$linkPath?>#contact-form">Contato</a></li>
                     </ul>                    
                 </div>
@@ -52,6 +52,11 @@
                             </div>
                         </div>
                     </span>
+                </div>
+                <div class="col-md-12 col-xs-12">
+                    <div class="center">
+                       Copyright© 2017 - Vista Life - Todos os direitos reservados.
+                    </div>
                 </div>
                <!--  <div class="col-md-4 col-xs-5">
                     <div class="center">

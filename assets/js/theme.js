@@ -9,7 +9,7 @@ function adaptMenu(windowObject){
 
 var globalVal = 1;
 var maxPics = 2;
-var changeTime = 10000;
+var changeTime = 30000;
 function changeImage(pos, autoChange){
 	if (autoChange === undefined){
 		autoChange = true;
