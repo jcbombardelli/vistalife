@@ -518,6 +518,9 @@ footer address:last-child {
         transform: translate(0%, 0%);
         transition: 0s;
     }
+    .post-style{
+        max-height: none;
+    }
     .navbar-collapse ul{
       width: 100%;
     }

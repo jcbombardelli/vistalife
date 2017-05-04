@@ -1,23 +1,79 @@
-<?php
-/**
- * @package WordPress
- * @subpackage YOUR_THEME
- */
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>VistaLife - Planejamento Financeiro</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-get_header();
-function custom_excerpt_length( $length ) {
-    return 29;
-}
-add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
-query_posts('posts_per_page=2');
-?>
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="/inc/css/main.css">
+        <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/style.css">
+
+        <script src="/assets/js/jquery.js"></script>
+        <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/assets/js/smooth-scroll.js"></script>
+        <script src="/assets/js/jssor.mini.js"></script>
+        <script src="/assets/js/theme.js"></script>
+        <script src="/inc/js/libs/modernizr-2.6.2.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="navbar navbar-default custom-navbar vistalife-navbar">
+                <div class="vistalife-navigator container">
+                    <div class="col-md-3 navbar-header">
+                        <a class="navbar-brand" href="/">
+                            <img class="brand img-responsive" src="/assets/img/white_logo.png">
+                        </a>
+                    </div>
+
+                    <div class="col-md-9">
+                        <!-- Esta parte só exibirá no Mobile (quadrado com 3 riscos do menu) -->
+                        <div class="navbar-header">
+                          <button type="button" class="navbar-toggle collapsed" 
+                          data-toggle="collapse" data-target="#navbar">
+                          <!-- A classe sr-only só é exibida em leitor de tela para que pessoas
+                          com deficiencia visual entendam o que há na tela -->
+                          <span class="sr-only">Menu de Navegação</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          </button>
+                        </div>
+                        <!-- Itens da navbar -->
+                        <div id="navbar" class="navbar-collapse collapse navbar-vistalife-menu">
+                            <ul class="nav navbar-nav">
+                                <li><a  data-scroll href="#funcionamento" class="itemMenu">Como Funciona</a></li>
+                                <li><a data-scroll href="#ourPlanning" class="itemMenu">Nosso Planejamento</a></li>
+                                <li><a data-scroll href="#nossos-diferenciais" class="itemMenu">Diferenciais</a></li>
+                                <li><a href="http://blog.vistalife.com.br/" class="itemMenu">Blog</a></li>
+                                <li><a data-scroll href="#contact-form" class="itemMenu">Contato</a></li>
+                                <li><a data-scroll href="#contact-form" class="itemMenu btn btn-gold btn-lg act-letstalk">Vamos Conversar?</a></li>
+                            </ul>
+                        </div><!-- fim .nav-collapse -->
+                    </div>
+                </div>
+            </nav>
+            <section class="container howItWorks">
+                <div class="topCasaFina-banner">
+                    <h3>Trabalhamos na melhor forma de estruturar suas finanças</h3>
+                    <h3>para que seus sonhos se tornem realidade.</h3>
+                    <button type="button" class="btn btn-gold btn-lg btn-moreabout">SAIBA MAIS</button>
+                </div>
+            </section>
+        </header>
 
     <section class="container howItWorks centralized-content">
         <div class="row" id="funcionamento">
             <h2 class="titulo topCasaFina-title">COMO FUNCIONA</h2>
             <div class="col-md-3 col-xs-13">
                 <figure class="thumbnail">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/img/icon_01.png" alt="" width="50%" height="50%">
+                    <img src="/assets/img/icon_01.png" alt="" width="50%" height="50%">
                     <figcaption class="caption">
                         <h3 class="titulo">Conversar</h3>
                         <p>
@@ -30,7 +86,7 @@ query_posts('posts_per_page=2');
             <div class="col-md-3 col-xs-13">
 
                 <figure class="thumbnail">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/img/icon_02.png" alt="" width="50%" height="50%">
+                    <img src="/assets/img/icon_02.png" alt="" width="50%" height="50%">
                     <figcaption class="caption">
                         <h3 class="titulo">Planejar</h3>
                         <p>
@@ -42,7 +98,7 @@ query_posts('posts_per_page=2');
             <div class="col-md-3 col-xs-13">
 
                 <figure class="thumbnail">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/img/icon_03.png" alt="" width="50%" height="50%">
+                    <img src="/assets/img/icon_03.png" alt="" width="50%" height="50%">
                     <figcaption class="caption">
                         <h3 class="titulo">Implementar</h3>
                         <p>
@@ -54,7 +110,7 @@ query_posts('posts_per_page=2');
             <div class="col-md-3 col-xs-13">
 
                 <figure class="thumbnail">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/img/icon_04.png" width="50%" height="50%" alt="">
+                    <img src="/assets/img/icon_04.png" width="50%" height="50%" alt="">
                     <figcaption class="caption">
                         <h3 class="titulo">Acompanhar</h3>
                         <p>
@@ -73,7 +129,7 @@ query_posts('posts_per_page=2');
             <div class="col-md-12 text-center">
                 <p>Nosso planejamento financeiro aborda diversos assuntos, aplicados com inteligência para que seu planos se tornem reais.</p>
                 <div class="margin-4em"></div>
-                <img src="<?php bloginfo('template_url'); ?>/assets/img/solucao.png" class="img-solution img-responsive" alt="">
+                <img src="/assets/img/solucao.png" class="img-solution img-responsive" alt="">
             </div>
         </div>
     </div>
@@ -131,13 +187,20 @@ query_posts('posts_per_page=2');
                         foreach ($jsonContent as $post) {
                             $postArray = (array)$post;
                             $postArray['_links'] = (array)$postArray['_links'];
-                            $thumbLink = file_get_contents($postArray['_links']['wp:featuredmedia'][0]->href);
-                            $thumbLink = json_decode($thumbLink, true);
+                            $thumbLink = "";
+                            if (isset($postArray['_links']['wp:featuredmedia'][0]->href)){
+                                $thumbLink = file_get_contents($postArray['_links']['wp:featuredmedia'][0]->href);
+                                $thumbLink = json_decode($thumbLink, true);
+                            }
                         ?>
 
                             <div class="col-md-5 col-xs-12 post-style" id="post-<?=$post->id?>">
                                 <div class="col-md-5 col-xs-12 post-thumb">
-                                    <img class="post-img" src="<?=$thumbLink['media_details']['sizes']['medium']['source_url']?>">
+                                    <?php if (isset($thumbLink['media_details']['sizes']['medium']['source_url'])){?>
+                                        <img class="post-img" src="<?=$thumbLink['media_details']['sizes']['medium']['source_url']?>">
+                                    <?php }else{ ?>
+                                        <img class="post-img" src="">
+                                    <?php } ?>
                                 </div>
                                 <div class="post-description col-md-7 col-xs-12">
                                     <h3 class="title"><a href="<?=$post->link ?>" rel="bookmark" title="<?=$post->title->rendered ?>"><?=$post->title->rendered ?></a></h3 class="title">
@@ -152,15 +215,7 @@ query_posts('posts_per_page=2');
                         } ?>
                     </div>
 
-                <?php 
-                }else { ?>
-
-                    <h2 class="center">Not Found</h2>
-                    <p class="center">Sorry, but you are looking for something that isn't here.</p>
-                    <?php get_search_form(); ?>
-
-                <?php 
-                } ?>
+                <?php } ?>
             </span>
         </div>
         
@@ -171,8 +226,7 @@ query_posts('posts_per_page=2');
         <section id="contato" class="div-center container content-padding" style="display: none;">
             <div class="col-md-6">
                 <span class="center">
-                    <h2>Contato</h2>
-                    <h4>Queremos conversar com você!</h4>
+                    <h2>Queremos conversar com você!</h2>
                     <h4>Deixe sua mensagem que entraremos em contato.</h4>
                 </span>
                 <br><br>
@@ -196,10 +250,75 @@ query_posts('posts_per_page=2');
             </div>
         </section>
     </div>
-    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="/inc/js/libs/jquery-1.8.1.min.js"><\/script>')</script>
 
-<?php 
-get_sidebar(); ?>
+        <script src="/inc/js/main.min.js"></script>
 
-<?php 
-get_footer(); ?>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+        <footer>
+            <div class="row footer">
+                <div class="menuBar col-md-7 col-xs-12">
+                    <ul>
+                        <li><h3>VistaLife - Planejamento Financeiro</h3></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a data-scroll href="<?=$linkPath?>#funcionamento">Como Funciona</a></li>
+                        <li><a data-scroll href="<?=$linkPath?>#ourPlanning">Nosso Planejamento</a></li>
+                        <li><a data-scroll href="<?=$linkPath?>#nossos-diferenciais">Diferenciais</a></li>
+                        <li><a href="http://blog.temp.bruno.works/">Blog</a></li>
+                        <li><a data-scroll href="<?=$linkPath?>#contact-form">Contato</a></li>
+                    </ul>                    
+                </div>
+                <div class="menuBar col-md-5 col-xs-14">
+                    <div>
+                        <h3 class="center">ASSINE NOSSA NEWSLETTER</h3>
+                    </div>
+                    <span class="center">
+                        <form action="https://brunogeronimo.us5.list-manage.com/subscribe/post" method="POST">
+                            <input name="u" value="784fb3e969cfb0aac81ad2971" type="hidden">
+                            <input name="id" value="ed50d59977" type="hidden">
+                            <input type="email" name="MERGE0" placeholder="Digite seu e-mail">
+                            <input class="btn btn-gold btn-lg" type="submit" value="Enviar">
+                        </form>
+                        <div class="center">
+                            <div class="center">
+                                <label>Telefone: (11) 3087-9170</label>
+                            </div>
+                            <div class="center">
+                                <a href="mailto:falecom@vistalife.com.br">falecom@vistalife.com.br</a>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+                <div class="col-md-12 col-xs-12">
+                    <div class="center">
+                       Copyright© 2017 - Vista Life - Todos os direitos reservados.
+                    </div>
+                </div>
+               <!--  <div class="col-md-4 col-xs-5">
+                    <div class="center">
+                    </div>
+                    <div class="center">
+                    </div>
+                </div> -->
+            </div>
+        </footer>
+        <div class="disclaimer-background">
+            <div class="disclaimer">
+                A Vista Life está empenhada em oferecer informações de valor aos investidores e aos que desejam cuidar melhor de seu patrimônio. Tem como objetivo estimular o aprendizado e a discussão, para que as pessoas consigam tomar decisões com mais consciência e segurança. 
+
+                Entre os temas abordados estão os investimentos em si (renda fixa, ações, ativos imobiliários, fundos, previdência, etc.), a administração financeira pessoal e familiar, a gestão de riscos, o planejamento de aposentadoria, o planejamento tributário e o planejamento sucessório. Também terão vez os assuntos relacionados à macroeconomia (inflação, juros, desemprego, etc.) e ao ambiente político.
+
+                A Vista Life dá muita importância para que as informações sejam transmitidas com qualidade, isenção e linguagem fácil, observando, no entanto, que não faz qualquer tipo de recomendação, indicação e/ou aconselhamento de investimento, não se responsabilizando por perdas, danos, custos e lucros cessantes.
+            </div>
+        </div>
+
+    </body>
+
+</html>
