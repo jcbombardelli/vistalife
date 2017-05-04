@@ -48,7 +48,7 @@
                         <!-- Itens da navbar -->
                         <div id="navbar" class="navbar-collapse collapse navbar-vistalife-menu">
                             <ul class="nav navbar-nav">
-                                <li><a  data-scroll href="#funcionamento" class="itemMenu">Como Funciona</a></li>
+                                <li><a data-scroll href="#funcionamento" class="itemMenu">Como Funciona</a></li>
                                 <li><a data-scroll href="#ourPlanning" class="itemMenu">Nosso Planejamento</a></li>
                                 <li><a data-scroll href="#nossos-diferenciais" class="itemMenu">Diferenciais</a></li>
                                 <li><a href="http://blog.vistalife.com.br/" class="itemMenu">Blog</a></li>
@@ -63,7 +63,7 @@
                 <div class="topCasaFina-banner">
                     <h3>Trabalhamos na melhor forma de estruturar suas finanças</h3>
                     <h3>para que seus sonhos se tornem realidade.</h3>
-                    <button type="button" class="btn btn-gold btn-lg btn-moreabout">SAIBA MAIS</button>
+                    <a data-scroll href="#funcionamento" class="btn btn-gold btn-lg btn-moreabout">SAIBA MAIS</a>
                 </div>
             </section>
         </header>
