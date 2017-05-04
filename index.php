@@ -175,6 +175,7 @@ query_posts('posts_per_page=2');
                     <h4>Queremos conversar com você!</h4>
                     <h4>Deixe sua mensagem que entraremos em contato.</h4>
                 </span>
+                <br><br>
                 <form action="https://formspree.io/hi@bruno.works" method="POST" target="_blank">
                     <div class="form-group">
                         <div>
