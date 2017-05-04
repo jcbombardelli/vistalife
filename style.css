@@ -107,6 +107,7 @@ h1, h2, h3, h4, h5, h6{
 
 .btn-moreabout{
     width:10em;
+    margin-top: 2em;
 }
 
 *{
@@ -517,6 +518,9 @@ footer address:last-child {
         left: 0%;
         transform: translate(0%, 0%);
         transition: 0s;
+    }
+    .post-style{
+        max-height: none;
     }
     .navbar-collapse ul{
       width: 100%;
