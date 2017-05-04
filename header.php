@@ -3,6 +3,7 @@
  * @package WordPress
  * @subpackage YOUR_THEME
  */
+$linkPath = (is_home() ? "" : "/");
 ?>
 
 <!DOCTYPE html>
@@ -26,6 +27,8 @@
 
         <script src="<?php bloginfo('template_url'); ?>/assets/js/jquery.js"></script>
         <script src="<?php bloginfo('template_url'); ?>/assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/assets/js/smooth-scroll.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/assets/js/jssor.mini.js"></script>
         <script src="<?php bloginfo('template_url'); ?>/assets/js/theme.js"></script>
         <script src="<?php bloginfo('template_url'); ?>/inc/js/libs/modernizr-2.6.2.min.js"></script>
 
@@ -41,13 +44,11 @@
 
         <header>
             <nav class="navbar navbar-default custom-navbar vistalife-navbar">
-                <div class="container">
-                    <div class="col-md-3">
-                        <div class="navbar-header">
-                            <a class="navbar-brand" href="/">
-                                <img class="brand img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/white_logo.png">
-                            </a>
-                        </div>
+                <div class="vistalife-navigator container">
+                    <div class="col-md-3 navbar-header">
+                        <a class="navbar-brand" href="/">
+                            <img class="brand img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/white_logo.png">
+                        </a>
                     </div>
 
                     <div class="col-md-9">
@@ -64,20 +65,20 @@
                           </button>
                         </div>
                         <!-- Itens da navbar -->
-                        <div id="navbar" class="navbar-collapse collapse">
+                        <div id="navbar" class="navbar-collapse collapse navbar-vistalife-menu">
                             <ul class="nav navbar-nav">
-                                <li><a href="#funcionamento" class="itemMenu">Como Funciona</a></li>
-                                <li><a href="#" class="itemMenu">Nosso Planejamento</a></li>
-                                <li><a href="#" class="itemMenu">Diferenciais</a></li>
-                                <li><a href="#" class="itemMenu">Blog</a></li>
-                                <li><a href="#contato" class="itemMenu">Contato</a></li>
-                                <li><button type="button" class="btn btn-gold btn-lg">Vamos Conversar?</button></li>
+                                <li><a href="<?=$linkPath?>#funcionamento" class="itemMenu">Como Funciona</a></li>
+                                <li><a data-scroll href="<?=$linkPath?>#ourPlanning" class="itemMenu">Nosso Planejamento</a></li>
+                                <li><a data-scroll href="<?=$linkPath?>#nossos-diferenciais" class="itemMenu">Diferenciais</a></li>
+                                <li><a href="http://blog.temp.bruno.works/" class="itemMenu">Blog</a></li>
+                                <li><a data-scroll href="<?=$linkPath?>#contact-form" class="itemMenu">Contato</a></li>
+                                <li><a data-scroll href="<?=$linkPath?>#contact-form" class="itemMenu btn btn-gold btn-lg act-letstalk">Vamos Conversar?</a></li>
                             </ul>
                         </div><!-- fim .nav-collapse -->
                     </div>
                 </div>
             </nav>
-            <section class="container howItWorks" id="funcionamento">
+            <section class="container howItWorks">
                 <div class="topCasaFina-banner">
                     <h3>Trabalhamos na melhor forma de estruturar suas finanças</h3>
                     <h3>para que seus sonhos se tornem realidade.</h3>

@@ -20,12 +20,13 @@
     src: url(assets/fonts/klavika/klavikaregular-plain.otf);
 }
 
+.margin-4em{margin-bottom: 4em;}
+
 input[type="button"], input[type="submit"]{
     color: #FFF;
     background-color: #0A99D2;
     border-color: #0A99D2;
     width: 100%;
-    margin-top: 1em;
 }
 
 input[type="text"], input[type="email"], input[type="phone"]{
@@ -44,6 +45,12 @@ textarea{
     margin-top: 1em;
 }
 
+
+
+.contato input, .contato textarea{
+    margin-top: 2em;
+}
+
 .div-center{
     align-items: center;
     display: flex;
@@ -52,12 +59,13 @@ textarea{
     justify-content: center;
 }
 
-.howItWorks section{
-    margin-bottom: 2.5em;
+.howItWorks{
+    margin-top: 3em !important;
+    margin-bottom: 3em;
 }
 
 .topCasaFina-title{
-    margin-bottom: 1.5em !important;
+    margin-bottom: 2em !important;
 }
 
 .center{
@@ -69,40 +77,85 @@ textarea{
     margin-bottom: 5em;
 }
 
-
 h1, h2, h3, h4, h5, h6{
     font-family: klavikaBold;
+}
+
+.topCasaFina-banner {
+    color: #FFF;
+    text-align: center;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s;
+}
+
+.topCasaFina-banner h3{
+    font-family: klavika;
+    font-size: 2.4em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+.topCasaFina-banner button{
+    margin-top: 1.5em;
+}
+
+.btn-moreabout{
+    width:10em;
 }
 
 *{
     font-family: klavika;
 }
 
+.disclaimer-background{
+    background-color: #F5F5F5;
+}
+
 .disclaimer{
-    background-color: #1B2C3F;
+    color: #000000;
+    text-align: justify;
+    padding-right: 13em;
+    padding-left: 13em;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 
 .footer{
-    padding-right: 7em;
-    padding-left: 7em;
+    padding-right: 4em;
+    padding-left: 4em;
+}
+
+.centralized-content{
+    padding-right: 4em;
+    padding-left: 4em;
 }
 
 .footer li{
     list-style-type: none;
 }
+
+.footer a{
+    color: #FFFFFF;
+}
+
 .footer input{
     color: #000000;
 }
 .footer input[type="email"]{
-    width: 60%;
+    width: 67%;
 }
 .footer input[type="submit"]{
     width: 20%;
-    height: 3em;
-    margin-top: 0em;
 }
 
 .panel-group{
+    margin-top: 5em;
     margin-bottom: 10em;
 }
 
@@ -110,11 +163,33 @@ h1, h2, h3, h4, h5, h6{
     text-align: center;
 }
 
+.contato h2, .contato h4{
+    color: #FFFFFF;
+}
+
+.contato h4{
+    font-family: klavika;
+}
+
+#blog{
+    margin-top: 0em;
+    margin-bottom: 0em;
+    padding-top: 8em;
+    padding-bottom: 8em;
+}
+#blog .title{
+    padding-bottom: 0.5em;
+}
+
 .contato {
-    /*background-image: url(assets/img/tablet.jpeg);*/
+    background-image: url(assets/img/banner-talkwithus.jpg);
     background-size: cover;
     background-position: top center;
     background-color: #F5F5F5;
+    padding-bottom: 3em;
+    padding-top: 3em;
+    margin-top: 0em;
+    margin-bottom: 0em;
 }
 
 html,
@@ -123,10 +198,11 @@ body {
 }
 
 header {
-    background-image: url(assets/img/background.jpg);
+    background-image: url(assets/img/background-1.jpg);
     background-size: cover;
     background-position: top center;
     height: 100%;
+    font-size: auto;
 }
 
 header h1 {
@@ -146,14 +222,15 @@ header h1 {
 
 .img-solution{
     width: 70%;
-    height: 70
+    height: 70;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 .our-planning{
-    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 4em;
 }
 
 .post-padding{
@@ -167,9 +244,14 @@ header h1 {
     margin-bottom: 2em;
     padding: 0;
     min-height: 20.4em;
+    max-height: 20.4em;
     margin-left: 1em;
     margin-bottom: 1em;
     word-break: break-all;
+}
+
+.post-style p{
+    margin-bottom: 0em;
 }
 
 .post-thumb{
@@ -196,11 +278,10 @@ header h1 {
 .post-buttons .btn-loadpost{
     border-radius: 0 !important;
     min-width: 10em;
+    margin-top: 1.5em;
 }
 
 .post-img{
-    /*width: 15.3em;
-    height: 20em;*/
     width: inherit;
     height: inherit;
 }
@@ -222,16 +303,24 @@ header h1 {
   background-color: #1B2C3F !important;
 }
 
-.vistalife-navbar .navbar-nav > li > a {
-  color: #d6f14b;
+.vistalife-navbar-mobile{
+  background-color: #1B2C3F !important;
 }
 
-.navbar-collapse{
-  width: 100%;
+.vistalife-navbar .navbar-nav > li > a{
+  color: #ffffff;
 }
+
+.vistalife-navigator{
+    margin-bottom: 1em;
+}
+
+/*.navbar-collapse{
+  width: 100%;
+}*/
 
 .navbar-collapse ul{
-  width: 100%;
+  width: auto;
 }
 
 .post-description p{
@@ -258,6 +347,7 @@ header h1 {
     color: white !important;
     font-size: large;
     margin-top: 1.5em;
+    font-size: auto;
 }
 
 .thumbnail {
@@ -265,16 +355,9 @@ header h1 {
     text-align: justify;
 }
 
-.topCasaFina-banner {
-    color: #FFF;
-    text-align: center;
-    width: 100%;
-    border-radius: 5px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: .3s;
+.thumbnail img{
+    width: 7em;
+    height: 7em;
 }
 
 .titulo-depoimentos {
@@ -287,13 +370,10 @@ header h1 {
 }
 
 .btn-gold {
-    background-color: #B0924E;
-    color: white;
-    margin-top: 1.5em;
-}
-
-.btn-moreabout{
-    margin-top: 5em;
+    background-color: #B0924E !important;
+    border-color: #B0924E !important;
+    color: white !important;
+    /*margin-top: 1.5em;*/
 }
 
 .titulo {
@@ -328,12 +408,117 @@ header h1 {
     padding-bottom: 2em;
 }
 
+.menuBar{
+    margin-top: 0em;
+}
+
 footer {
     background-color: #1B2C3F;
     color: #FFF;
-    padding: 20px;
+    padding: 3em;
+}
+
+footer h3{
+    margin-top: 0em;
 }
 
 footer address:last-child {
     margin-bottom: 0;
+}
+
+.footer label, .footer a{
+    font-family: klavika;
+    margin-bottom: 0em;
+    margin-top: 1em;
+}
+.pointer .right-pointer{
+    text-align: left;
+    float: left;
+    width: 4em;
+}
+.pointer .left-pointer{
+    text-align: right;
+    float: right;
+    width: 4em;
+}
+.pointer a{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 3em;
+    text-decoration: none;
+}
+.pointer{
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    color: #FFFFFF;
+    margin-top: 15%;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+/*@media (max-width: 1132px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+}*/
+
+@media screen and (max-width: 700px){
+    header {
+        background-image: url(assets/img/background-1.jpg);
+        background-size: cover;
+        background-position: top center;
+        height: auto;
+        padding-bottom: 2em;
+    }
+
+    footer {
+        padding: 1em;
+    }
+
+    .footer{
+        padding-right: 0em;
+        padding-left: 0em;
+    }
+
+    .topCasaFina-banner h3{
+        font-size: 1.4em;
+        margin: 0em;
+        padding: 0em;
+    }
+
+    .centralized-content{
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+    .disclaimer{
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+    .topCasaFina-banner {
+        color: #FFF;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        margin-top: 5em;
+
+        border-radius: 0px;
+        position: relative;
+        top: 0%;
+        left: 0%;
+        transform: translate(0%, 0%);
+        transition: 0s;
+    }
+    .navbar-collapse ul{
+      width: 100%;
+    }
 }
