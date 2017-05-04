@@ -143,7 +143,7 @@
                 </div>
                 <div id="text-cfp" class="collapse in">
                     <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,.</p>
+                        <p>Para sua tranquilidade e segurança, nossos profissionais possuem certificação CFP© e grande conhecimento do mercado. Garantia de ética e excelência, o certificado CFP© é o maior reconhecimento na prestação de serviço de planejamento financeiro.</p>
                     </div>
                 </div>
             </div>
@@ -154,7 +154,7 @@
                 </div>
                 <div id="text-cfp" class="collapse in">
                     <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,.</p>
+                        <p>Atuando no mercado há mais de 10 anos, a Vista Life possui competência para indicar, com segurança, qual o melhor caminho para atingir seus objetivos. Contamos com profundo conhecimento não só no planejamento financeiro, como também nos produtos implementados nele.</p>
                     </div>
                 </div>
             </div>
@@ -165,7 +165,7 @@
                 </div>
                 <div id="text-cfp" class="collapse in">
                     <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,.</p>
+                        <p>Nosso compromisso é de compreender sua situação atual e seus objetivos de vida, para então, apresentar soluções que condizem com a sua necessidade. Diferente do mercado financeiro tradicional, a oferta dos produtos é feita somente no final, após o planejamento.</p>
                     </div>
                 </div>
             </div>  
