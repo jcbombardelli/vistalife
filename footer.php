@@ -21,7 +21,7 @@
         <?php wp_footer(); ?>
         <footer>
             <div class="row footer">
-                <div class="menuBar col-md-7 col-xs-8">
+                <div class="menuBar col-md-7 col-xs-12">
                     <ul>
                         <li><h3>VistaLife - Planejamento Financeiro</h3></li>
                         <li><a href="/">Home</a></li>
@@ -32,7 +32,7 @@
                         <li><a data-scroll href="<?=$linkPath?>#contact-form">Contato</a></li>
                     </ul>                    
                 </div>
-                <div class="menuBar col-md-5 col-xs-12">
+                <div class="menuBar col-md-5 col-xs-14">
                     <div>
                         <h3 class="center">ASSINE NOSSA NEWSLETTER</h3>
                     </div>

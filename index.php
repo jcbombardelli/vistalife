@@ -122,7 +122,7 @@ query_posts('posts_per_page=2');
 
             <span class="postArea">
                 <?php 
-                    $content = file_get_contents('http://blog.temp.bruno.works/wp-json/wp/v2/posts/?per_page=2');
+                    $content = file_get_contents('http://blog.vistalife.com.br/wp-json/wp/v2/posts/?per_page=2');
                     $jsonContent = json_decode($content);
                 if (count($jsonContent) > 0){ ?>
                     <div class="row div-center">

@@ -198,15 +198,11 @@ body {
 }
 
 header {
-   /* background-image: url(assets/img/background-1.jpg);
-    background-size: cover;
-    background-position: top center;
-    height: auto;
-    padding-bottom: 2em;*/
     background-image: url(assets/img/background-1.jpg);
     background-size: cover;
     background-position: top center;
     height: 100%;
+    font-size: auto;
 }
 
 header h1 {
@@ -351,6 +347,7 @@ header h1 {
     color: white !important;
     font-size: large;
     margin-top: 1.5em;
+    font-size: auto;
 }
 
 .thumbnail {
@@ -460,6 +457,21 @@ footer address:last-child {
     padding-right: 2em;
 }
 
+/*@media (max-width: 1132px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+}*/
+
 @media screen and (max-width: 700px){
     header {
         background-image: url(assets/img/background-1.jpg);
@@ -468,13 +480,29 @@ footer address:last-child {
         height: auto;
         padding-bottom: 2em;
     }
-    .footer{
-        padding-right: 1em;
-        padding-left: 1em;
+
+    footer {
+        padding: 1em;
     }
+
+    .footer{
+        padding-right: 0em;
+        padding-left: 0em;
+    }
+
+    .topCasaFina-banner h3{
+        font-size: 1.4em;
+        margin: 0em;
+        padding: 0em;
+    }
+
     .centralized-content{
         padding-right: 1em;
         padding-left: 1em;
+    }
+    .disclaimer{
+        padding-right: 2em;
+        padding-left: 2em;
     }
     .topCasaFina-banner {
         color: #FFF;

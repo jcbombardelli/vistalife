@@ -1,5 +1,5 @@
 function adaptMenu(windowObject){
-	if ($(windowObject).width() < 700){
+	if ($(windowObject).width() < 900){
 	  $('.vistalife-navbar').removeClass('navbar-fixed-top');
 	  $(".vistalife-navbar").addClass("vistalife-navbar-mobile vistalife-navbar-fixed");
 	}else{
