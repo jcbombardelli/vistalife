@@ -13,6 +13,7 @@
 
 	if (!$response->success){
 		echo json_encode(array("status" => false, "message" => "RECAPTCHA inválido"));
+		return;
 	}
 
 	$name = $_POST['name'];
