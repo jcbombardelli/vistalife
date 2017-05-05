@@ -9,7 +9,8 @@
 	$from = "hi@bruno.works";
 	$headers = "From: hi@bruno.works"
 				."\r\nReply-To: $_replyto"
-				."\r\nContent-type: text/html; charset=iso-8859-1";
+				."\r\nMIME-Version: 1.0"
+				."\r\nContent-type: text/html; charset=UTF-8";
 	$subject = "Contato - Site";
 	$body = "";
 
@@ -18,5 +19,5 @@
 			."Telefone: $phone<br/>"
 			."Responder para: $_replyto<br/>"
 			."Mensagem: $message";
-	mail($to, $subject, $body);
+	mail($to, $subject, $body, $headers);
 ?>
