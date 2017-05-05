@@ -192,14 +192,15 @@
                             $thumbLink = "";
                             if (isset($postArray['_links']['wp:featuredmedia'][0]->href)){
                                 $thumbLink = file_get_contents($postArray['_links']['wp:featuredmedia'][0]->href);
+                                // echo $postArray['_links']['wp:featuredmedia'][0]->href;
                                 $thumbLink = json_decode($thumbLink, true);
                             }
                         ?>
 
                             <div class="col-md-12 col-xs-12 post-style" id="post-<?=$post->id?>">
                                 <div class="col-md-5 col-xs-12 post-thumb">
-                                    <?php if (isset($thumbLink['media_details']['sizes']['medium']['source_url'])){?>
-                                        <img class="post-img" src="<?=$thumbLink['media_details']['sizes']['medium']['source_url']?>">
+                                    <?php if (isset($thumbLink['media_details']['sizes']['large']['source_url'])){?>
+                                        <img class="post-img" src="<?=$thumbLink['media_details']['sizes']['large']['source_url']?>">
                                     <?php }else{ ?>
                                         <img class="post-img" src="">
                                     <?php } ?>

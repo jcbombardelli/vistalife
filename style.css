@@ -254,8 +254,8 @@ header h1 {
     border-color: #999999;
     margin-bottom: 2em;
     padding: 0;
-    min-height: 20.4em;
-    max-height: 20.4em;
+    min-height: 19em;
+    max-height: 19em;
     margin-left: 1em;
     margin-bottom: 1em;
     word-break: keep-all;
@@ -267,19 +267,10 @@ header h1 {
 
 .post-thumb{
     background-color: #B0924E !important;
-    min-height: 20em;
-    max-height: 20em;
+    min-height: 18em;
+    max-height: 18em;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.post-thumb img{
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%;
+    margin-bottom: 0em;
 }
 
 .post-buttons{
@@ -289,12 +280,12 @@ header h1 {
 .post-buttons .btn-loadpost{
     border-radius: 0 !important;
     min-width: 10em;
-    margin-top: 1.5em;
+    margin-top: 0.7em;
 }
 
 .post-img{
-    width: inherit;
-    height: inherit;
+    width: 100%;
+    height: 100%;
 }
 
 .postArea{
@@ -531,6 +522,9 @@ footer address:last-child {
     }
     .post-style{
         max-height: none;
+    }
+    .post-thumb{
+        margin-bottom: 0.5em;
     }
     .navbar-collapse ul{
       width: 100%;
