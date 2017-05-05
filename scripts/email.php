@@ -22,9 +22,9 @@
 	$message = $_POST['message'];
 
 
-	$to = "hi@bruno.works";
-	$from = "hi@bruno.works";
-	$headers = "From: hi@bruno.works"
+	$to = "falecom@vistalife.com.br";
+	$from = "falecom@vistalife.com.br";
+	$headers = "From: falecom@vistalife.com.br"
 				."\r\nReply-To: $_replyto"
 				."\r\nMIME-Version: 1.0"
 				."\r\nContent-type: text/html; charset=UTF-8";
@@ -32,7 +32,8 @@
 	$body = "";
 
 
-	$body = "Nome: $name<br/>"
+	$body = "Olá! Você recebeu um novo formulário no site!<br/>"
+			."Nome: $name<br/>"
 			."Telefone: $phone<br/>"
 			."Responder para: $_replyto<br/>"
 			."Mensagem: $message";
