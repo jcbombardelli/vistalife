@@ -54,7 +54,7 @@
                                 <li><a data-scroll href="#nosso-planejamento" class="itemMenu">Nosso Planejamento</a></li>
                                 <li><a data-scroll href="#diferenciais" class="itemMenu">Diferenciais</a></li>
                                 <li><a href="http://blog.vistalife.com.br/" class="itemMenu">Blog</a></li>
-                                <li><a data-scroll href="#contato" class="itemMenu">Contato</a></li>
+                                <li><a data-scroll href="#contato-div" class="itemMenu">Contato</a></li>
                                 <li><a data-scroll href="#contato" class="itemMenu btn btn-gold btn-lg act-letstalk">Vamos Conversar?</a></li>
                             </ul>
                         </div><!-- fim .nav-collapse -->
@@ -274,11 +274,11 @@
                     <ul>
                         <li><h3>Vista Life - Financial Planning</h3></li>
                         <li><a href="/">Home</a></li>
-                        <li><a data-scroll href="<?=$linkPath?>#como-funciona">Como Funciona</a></li>
-                        <li><a data-scroll href="<?=$linkPath?>#nosso-planejamento">Nosso Planejamento</a></li>
-                        <li><a data-scroll href="<?=$linkPath?>#diferenciais">Diferenciais</a></li>
+                        <li><a data-scroll href="#como-funciona">Como Funciona</a></li>
+                        <li><a data-scroll href="#nosso-planejamento">Nosso Planejamento</a></li>
+                        <li><a data-scroll href="#diferenciais">Diferenciais</a></li>
                         <li><a href="http://blog.vistalife.com.br/">Blog</a></li>
-                        <li><a data-scroll href="<?=$linkPath?>#contato">Contato</a></li>
+                        <li><a data-scroll href="#contato-div">Contato</a></li>
                     </ul>                    
                 </div>
                 <div class="menuBar col-md-5 col-xs-14">
