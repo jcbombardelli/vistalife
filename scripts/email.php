@@ -12,7 +12,7 @@
 	}
 
 	if (!$response->success){
-		echo json_encode(array("status" => false, "message" => "RECAPTCHA inválido"));
+		echo json_encode(array("status" => false, "code" => "ERR_INVALID_RECAPTCHA", "message" => "RECAPTCHA inválido"));
 		return;
 	}
 
@@ -37,8 +37,8 @@
 			."Responder para: $_replyto<br/>"
 			."Mensagem: $message";
 	if (mail($to, $subject, $body, $headers)){
-		echo json_encode(array("status" => true, "message" => "E-mail enviado com sucesso!"));
+		echo json_encode(array("status" => true, "code" => "SUCCESS", "message" => "E-mail enviado com sucesso!"));
 	}else{
-		echo json_encode(array("status" => false, "message" => "Erro interno ao enviar o e-mail"));
+		echo json_encode(array("status" => false, "code" => "MAIL_FAILURE", "message" => "Erro interno ao enviar o e-mail"));
 	}
 ?>

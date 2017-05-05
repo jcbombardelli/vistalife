@@ -223,7 +223,8 @@
         
     </div>
 
-    <div id="contatoo" class="jumbotron contato">
+    <div id="contato" class="jumbotron contato">
+        <span class="answers"></span>
         <a id="contato-link" class="center fadein-item" target="#contato" href="#"><h2>Ficou Interessado? Clique aqui!</h2></a>
         <section id="contato" class="div-center container content-padding" style="display: none;">
             <div class="col-md-6">
@@ -232,7 +233,7 @@
                     <h4>Deixe sua mensagem que entraremos em contato.</h4>
                 </span>
                 
-                <form action="/scripts/email.php" method="POST" target="_blank">
+                <form class="contact-email" action="/scripts/email.php" method="POST">
                     <div class="form-group">
                         <div>
                             <input type="text" required name="name" placeholder=" Nome">

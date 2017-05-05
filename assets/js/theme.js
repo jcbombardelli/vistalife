@@ -47,6 +47,19 @@ $(document).ready(function(){
 
 	});
 
+	var contactForm = $(".contact-email");
+	contactForm.submit(function(e){
+		e.preventDefault();
+		$.ajax({
+            type: contactForm.attr('method'),
+            url: contactForm.attr('action'),
+            data: contactForm.serialize(),
+            success: function (data) {
+                alert(data);
+            }
+        });
+	})
+
 	$(".left-pointer").click(function(e){
 		e.preventDefault();
 		if (globalVal === 1){
