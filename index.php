@@ -285,10 +285,10 @@
                         <h3 class="center">ASSINE NOSSA NEWSLETTER</h3>
                     </div>
                     <span class="center">
-                        <form action="//altavistainvest.us3.list-manage.com/subscribe/post?u=ea1ccb8bb58a4b39dc4c5fc97&amp;id=e21c0a59d7" method="POST">
-                            <input name="u" value="784fb3e969cfb0aac81ad2971" type="hidden">
-                            <input name="id" value="mc-embedded-subscribe-form" type="hidden">
-                            <input type="email" name="mc-embedded-subscribe-form" placeholder="Digite seu e-mail">
+                        <form action="//altavistainvest.us3.list-manage.com/subscribe/post?u=ea1ccb8bb58a4b39dc4c5fc97&amp;id=e21c0a59d7" method="POST" target="_blank">
+                            <input name="u" value="ea1ccb8bb58a4b39dc4c5fc97" type="hidden">
+                            <input name="id" value="e21c0a59d7" type="hidden">
+                            <input type="email" name="MERGE0" placeholder="Digite seu e-mail">
                             <input class="btn btn-gold btn-lg" type="submit" value="Enviar">
                         </form>
                         <div class="center">
