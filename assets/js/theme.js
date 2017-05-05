@@ -49,12 +49,16 @@ $(document).ready(function(){
 
 	$(".contact-email").submit(function(e){
 		e.preventDefault();
+		$("#answers").html("");
 		$.ajax({
             type: $(this).attr('method'),
             url: $(this).attr('action'),
             data: $(this).serialize(),
             success: function (data) {
-                alert(data);
+            	if (data.status){
+            		$("#contato").hide();
+            	}
+            	$("#answers").html(data.message);
             }
         });
 	})
