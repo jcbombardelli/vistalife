@@ -22,6 +22,16 @@
 
 .margin-4em{margin-bottom: 4em;}
 
+.g-recaptcha {
+    width: 50%;
+    margin-top: 2em;
+    display: inline-block;
+}
+
+.text-xs-center {
+    text-align: center;
+}
+
 input[type="button"], input[type="submit"]{
     color: #FFF;
     background-color: #0A99D2;

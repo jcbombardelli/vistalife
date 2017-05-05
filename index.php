@@ -19,6 +19,8 @@
         <script src="/assets/js/theme.js"></script>
         <script src="/inc/js/libs/modernizr-2.6.2.min.js"></script>
 
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+
     </head>
 
     <body>
@@ -230,7 +232,7 @@
                     <h4>Deixe sua mensagem que entraremos em contato.</h4>
                 </span>
                 
-                <form action="https://formspree.io/hi@bruno.works" method="POST" target="_blank">
+                <form action="/scripts/email.php" method="POST" target="_blank">
                     <div class="form-group">
                         <div>
                             <input type="text" required name="name" placeholder=" Nome">
@@ -244,6 +246,7 @@
                         <div>
                             <textarea required name="message" placeholder=" Deixe sua mensagem!"></textarea>
                         </div>
+                        <div class="g-recaptcha" data-sitekey="6LeJBiAUAAAAADg4ezS5K2T-HD1PCW6f_EzqeH47"></div>
                         <input type="submit" class="btn btn-gold btn-lg" value="Enviar">
                     </div>
                 </form>
