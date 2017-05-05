@@ -107,7 +107,7 @@ $(document).ready(function(){
 		e.preventDefault();
 		var anchor = document.querySelector('#contact-form-link');
 		smoothScroll.animateScroll(anchor);
-		$("#contact-form-link").click();
+		$("#contato-link").click();
 	})
 
 	var contactFunction = function(object){
