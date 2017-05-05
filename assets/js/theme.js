@@ -104,9 +104,9 @@ $(document).ready(function(){
 	});
 
 	$(".act-letstalk").click(function(e){
-		// e.preventDefault();
-		// var anchor = document.querySelector('#contact-form-link');
-		// smoothScroll.animateScroll(anchor);
+		e.preventDefault();
+		var anchor = document.querySelector('#contact-form-link');
+		smoothScroll.animateScroll(anchor);
 		$("#contact-form-link").click();
 	})
 
