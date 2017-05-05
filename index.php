@@ -224,7 +224,7 @@
     </div>
 
     <div id="contato-div" class="jumbotron contato">
-        <span id="contato-answers"></span>
+        <span id="contato-answers center"></span>
         <span id="contato-form">
             <a id="contato-link" class="center fadein-item" target="#contato" href="#"><h2>Ficou Interessado? Clique aqui!</h2></a>
             <section id="contato" class="div-center container content-padding" style="display: none;">
@@ -233,7 +233,6 @@
                         <h2>Queremos conversar com você!</h2>
                         <h4>Deixe sua mensagem que entraremos em contato.</h4>
                     </span>
-                    
                     <form class="contact-email" action="/scripts/email.php" method="POST">
                         <div class="form-group">
                             <div>
