@@ -58,7 +58,7 @@ $(document).ready(function(){
             	if (data.status){
             		$("#contato-form").hide();
             	}
-            	$("#contato-answers").html(data.message);
+            	$("#contato-answers").html("<h2>"+data.message+"</h2>");
             }
         });
 	})
