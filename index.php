@@ -224,35 +224,37 @@
     </div>
 
     <div id="contato-div" class="jumbotron contato">
-        <span class="answers"></span>
-        <a id="contato-link" class="center fadein-item" target="#contato" href="#"><h2>Ficou Interessado? Clique aqui!</h2></a>
-        <section id="contato" class="div-center container content-padding" style="display: none;">
-            <div class="col-md-6">
-                <span class="center">
-                    <h2>Queremos conversar com você!</h2>
-                    <h4>Deixe sua mensagem que entraremos em contato.</h4>
-                </span>
-                
-                <form class="contact-email" action="/scripts/email.php" method="POST">
-                    <div class="form-group">
-                        <div>
-                            <input type="text" required name="name" placeholder=" Nome">
+        <span id="contato-answers"></span>
+        <span id="contato-form">
+            <a id="contato-link" class="center fadein-item" target="#contato" href="#"><h2>Ficou Interessado? Clique aqui!</h2></a>
+            <section id="contato" class="div-center container content-padding" style="display: none;">
+                <div class="col-md-6">
+                    <span class="center">
+                        <h2>Queremos conversar com você!</h2>
+                        <h4>Deixe sua mensagem que entraremos em contato.</h4>
+                    </span>
+                    
+                    <form class="contact-email" action="/scripts/email.php" method="POST">
+                        <div class="form-group">
+                            <div>
+                                <input type="text" required name="name" placeholder=" Nome">
+                            </div>
+                            <div>
+                                <input type="phone" required name="phone" placeholder=" Telefone">
+                            </div>
+                            <div>
+                                <input type="email" required name="_replyto" placeholder=" Email">
+                            </div>
+                            <div>
+                                <textarea required name="message" placeholder=" Deixe sua mensagem!"></textarea>
+                            </div>
+                            <div class="g-recaptcha" data-sitekey="6LeJBiAUAAAAADg4ezS5K2T-HD1PCW6f_EzqeH47"></div>
+                            <input type="submit" class="btn btn-gold btn-lg" value="Enviar">
                         </div>
-                        <div>
-                            <input type="phone" required name="phone" placeholder=" Telefone">
-                        </div>
-                        <div>
-                            <input type="email" required name="_replyto" placeholder=" Email">
-                        </div>
-                        <div>
-                            <textarea required name="message" placeholder=" Deixe sua mensagem!"></textarea>
-                        </div>
-                        <div class="g-recaptcha" data-sitekey="6LeJBiAUAAAAADg4ezS5K2T-HD1PCW6f_EzqeH47"></div>
-                        <input type="submit" class="btn btn-gold btn-lg" value="Enviar">
-                    </div>
-                </form>
-            </div>
-        </section>
+                    </form>
+                </div>
+            </section>
+        </span>
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="/inc/js/libs/jquery-1.8.1.min.js"><\/script>')</script>
