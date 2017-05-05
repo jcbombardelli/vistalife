@@ -7,7 +7,9 @@
 
 	$to = "hi@bruno.works";
 	$from = "hi@bruno.works";
-	$headers = "From: hi@bruno.works\r\nReply-To: $_replyto";
+	$headers = "From: hi@bruno.works"
+				."\r\nReply-To: $_replyto"
+				."\r\nContent-type: text/html; charset=iso-8859-1";
 	$subject = "Contato - Site";
 	$body = "";
 
