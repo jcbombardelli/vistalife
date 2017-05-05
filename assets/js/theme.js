@@ -47,13 +47,12 @@ $(document).ready(function(){
 
 	});
 
-	var contactForm = $(".contact-email");
-	contactForm.submit(function(e){
+	$(".contact-email").submit(function(e){
 		e.preventDefault();
 		$.ajax({
-            type: contactForm.attr('method'),
-            url: contactForm.attr('action'),
-            data: contactForm.serialize(),
+            type: $(this).attr('method'),
+            url: $(this).attr('action'),
+            data: $(this).serialize(),
             success: function (data) {
                 alert(data);
             }

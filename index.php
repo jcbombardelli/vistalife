@@ -223,7 +223,7 @@
         
     </div>
 
-    <div id="contato" class="jumbotron contato">
+    <div id="contato-div" class="jumbotron contato">
         <span class="answers"></span>
         <a id="contato-link" class="center fadein-item" target="#contato" href="#"><h2>Ficou Interessado? Clique aqui!</h2></a>
         <section id="contato" class="div-center container content-padding" style="display: none;">
