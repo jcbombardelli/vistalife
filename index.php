@@ -55,7 +55,7 @@
                                 <li><a data-scroll href="#diferenciais" class="itemMenu">Diferenciais</a></li>
                                 <li><a href="http://blog.vistalife.com.br/" class="itemMenu">Blog</a></li>
                                 <li><a data-scroll href="#contato-div" class="itemMenu">Contato</a></li>
-                                <li><a data-scroll href="#contato" class="itemMenu btn btn-gold btn-lg act-letstalk">Vamos Conversar?</a></li>
+                                <li><a data-scroll href="#contato-div" class="itemMenu btn btn-gold btn-lg act-letstalk">Vamos Conversar?</a></li>
                             </ul>
                         </div><!-- fim .nav-collapse -->
                     </div>
