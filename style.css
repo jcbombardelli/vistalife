@@ -258,7 +258,7 @@ header h1 {
     max-height: 20.4em;
     margin-left: 1em;
     margin-bottom: 1em;
-    word-break: break-all;
+    word-break: keep-all;
 }
 
 .post-style p{

@@ -196,7 +196,7 @@
                             }
                         ?>
 
-                            <div class="col-md-5 col-xs-12 post-style" id="post-<?=$post->id?>">
+                            <div class="col-md-12 col-xs-12 post-style" id="post-<?=$post->id?>">
                                 <div class="col-md-5 col-xs-12 post-thumb">
                                     <?php if (isset($thumbLink['media_details']['sizes']['medium']['source_url'])){?>
                                         <img class="post-img" src="<?=$thumbLink['media_details']['sizes']['medium']['source_url']?>">
