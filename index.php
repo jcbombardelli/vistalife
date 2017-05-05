@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>VistaLife - Planejamento Financeiro</title>
+        <title>Vista Life | Financial Planning</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -48,12 +48,12 @@
                         <!-- Itens da navbar -->
                         <div id="navbar" class="navbar-collapse collapse navbar-vistalife-menu">
                             <ul class="nav navbar-nav">
-                                <li><a data-scroll href="#funcionamento" class="itemMenu">Como Funciona</a></li>
-                                <li><a data-scroll href="#ourPlanning" class="itemMenu">Nosso Planejamento</a></li>
-                                <li><a data-scroll href="#nossos-diferenciais" class="itemMenu">Diferenciais</a></li>
+                                <li><a data-scroll href="#como-funciona" class="itemMenu">Como Funciona</a></li>
+                                <li><a data-scroll href="#nosso-planejamento" class="itemMenu">Nosso Planejamento</a></li>
+                                <li><a data-scroll href="#diferenciais" class="itemMenu">Diferenciais</a></li>
                                 <li><a href="http://blog.vistalife.com.br/" class="itemMenu">Blog</a></li>
-                                <li><a data-scroll href="#contact-form" class="itemMenu">Contato</a></li>
-                                <li><a data-scroll href="#contact-form" class="itemMenu btn btn-gold btn-lg act-letstalk">Vamos Conversar?</a></li>
+                                <li><a data-scroll href="#contato" class="itemMenu">Contato</a></li>
+                                <li><a data-scroll href="#contato" class="itemMenu btn btn-gold btn-lg act-letstalk">Vamos Conversar?</a></li>
                             </ul>
                         </div><!-- fim .nav-collapse -->
                     </div>
@@ -63,13 +63,13 @@
                 <div class="topCasaFina-banner">
                     <h3>Trabalhamos na melhor forma de estruturar suas finanças</h3>
                     <h3>para que seus sonhos se tornem realidade.</h3>
-                    <a data-scroll href="#funcionamento" class="btn btn-gold btn-lg btn-moreabout">SAIBA MAIS</a>
+                    <a data-scroll href="#como-funciona" class="btn btn-gold btn-lg btn-moreabout">SAIBA MAIS</a>
                 </div>
             </section>
         </header>
 
     <section class="container howItWorks centralized-content">
-        <div class="row" id="funcionamento">
+        <div class="row" id="como-funciona">
             <h2 class="titulo topCasaFina-title">COMO FUNCIONA</h2>
             <div class="col-md-3 col-xs-13">
                 <figure class="thumbnail">
@@ -123,7 +123,7 @@
 
     </section>
 
-    <div class="jumbotron" id="ourPlanning">
+    <div class="jumbotron" id="nosso-planejamento">
         <div class="container our-planning">
             <h2 class="titulo mainTitle">NOSSO PLANEJAMENTO</h2>
             <div class="col-md-12 text-center">
@@ -134,7 +134,7 @@
         </div>
     </div>
 
-    <section class="centralized-content container" id="nossos-diferenciais">
+    <section class="centralized-content container" id="diferenciais">
         <div class="row panel-group" id="group-diferenciais">
         <h2 class="titulo">DIFERENCIAIS</h2>
             <div class="col-md-4 col-xs-12">
@@ -154,7 +154,7 @@
                 </div>
                 <div id="text-cfp" class="collapse in">
                     <div class="panel-body">
-                        <p>Atuando no mercado há mais de 10 anos, a Vista Life possui competência para indicar, com segurança, qual o melhor caminho para atingir seus objetivos. Contamos com profundo conhecimento não só no planejamento financeiro, como também nos produtos implementados nele.</p>
+                        <p>Atuando no mercado há mais de 10 anos, a Vista Life possui competência para indicar qual o melhor caminho para atingir seus objetivos. Contamos com profundo conhecimento não só no planejamento financeiro, como também nos produtos implementados nele.</p>
                     </div>
                 </div>
             </div>
@@ -221,28 +221,28 @@
         
     </div>
 
-    <div id="contact-form" class="jumbotron contato">
-        <a id="contact-form-link" class="center fadein-item" target="#contato" href="#"><h2>Ficou Interessado? Clique aqui!</h2></a>
+    <div id="contatoo" class="jumbotron contato">
+        <a id="contato-link" class="center fadein-item" target="#contato" href="#"><h2>Ficou Interessado? Clique aqui!</h2></a>
         <section id="contato" class="div-center container content-padding" style="display: none;">
             <div class="col-md-6">
                 <span class="center">
                     <h2>Queremos conversar com você!</h2>
                     <h4>Deixe sua mensagem que entraremos em contato.</h4>
                 </span>
-                <br><br>
+                
                 <form action="https://formspree.io/hi@bruno.works" method="POST" target="_blank">
                     <div class="form-group">
                         <div>
-                            <input type="text" required name="name" placeholder="Nome">
+                            <input type="text" required name="name" placeholder=" Nome">
                         </div>
                         <div>
-                            <input type="phone" required name="phone" placeholder="Telefone">
+                            <input type="phone" required name="phone" placeholder=" Telefone">
                         </div>
                         <div>
-                            <input type="email" required name="_replyto" placeholder="Email">
+                            <input type="email" required name="_replyto" placeholder=" Email">
                         </div>
                         <div>
-                            <textarea required name="message" placeholder="Deixe sua mensagem!"></textarea>
+                            <textarea required name="message" placeholder=" Deixe sua mensagem!"></textarea>
                         </div>
                         <input type="submit" class="btn btn-gold btn-lg" value="Enviar">
                     </div>
@@ -266,13 +266,13 @@
             <div class="row footer">
                 <div class="menuBar col-md-7 col-xs-12">
                     <ul>
-                        <li><h3>VistaLife - Planejamento Financeiro</h3></li>
+                        <li><h3>Vista Life - Financial Planning</h3></li>
                         <li><a href="/">Home</a></li>
-                        <li><a data-scroll href="<?=$linkPath?>#funcionamento">Como Funciona</a></li>
-                        <li><a data-scroll href="<?=$linkPath?>#ourPlanning">Nosso Planejamento</a></li>
-                        <li><a data-scroll href="<?=$linkPath?>#nossos-diferenciais">Diferenciais</a></li>
-                        <li><a href="http://blog.temp.bruno.works/">Blog</a></li>
-                        <li><a data-scroll href="<?=$linkPath?>#contact-form">Contato</a></li>
+                        <li><a data-scroll href="<?=$linkPath?>#como-funciona">Como Funciona</a></li>
+                        <li><a data-scroll href="<?=$linkPath?>#nosso-planejamento">Nosso Planejamento</a></li>
+                        <li><a data-scroll href="<?=$linkPath?>#diferenciais">Diferenciais</a></li>
+                        <li><a href="http://blog.vistalife.com.br/">Blog</a></li>
+                        <li><a data-scroll href="<?=$linkPath?>#contato">Contato</a></li>
                     </ul>                    
                 </div>
                 <div class="menuBar col-md-5 col-xs-14">
@@ -280,10 +280,10 @@
                         <h3 class="center">ASSINE NOSSA NEWSLETTER</h3>
                     </div>
                     <span class="center">
-                        <form action="https://brunogeronimo.us5.list-manage.com/subscribe/post" method="POST">
+                        <form action="//altavistainvest.us3.list-manage.com/subscribe/post?u=ea1ccb8bb58a4b39dc4c5fc97&amp;id=e21c0a59d7" method="POST">
                             <input name="u" value="784fb3e969cfb0aac81ad2971" type="hidden">
-                            <input name="id" value="ed50d59977" type="hidden">
-                            <input type="email" name="MERGE0" placeholder="Digite seu e-mail">
+                            <input name="id" value="mc-embedded-subscribe-form" type="hidden">
+                            <input type="email" name="mc-embedded-subscribe-form" placeholder="Digite seu e-mail">
                             <input class="btn btn-gold btn-lg" type="submit" value="Enviar">
                         </form>
                         <div class="center">
@@ -293,13 +293,14 @@
                             <div class="center">
                                 <a href="mailto:falecom@vistalife.com.br">falecom@vistalife.com.br</a>
                             </div>
+                            <div class="center">
+                                <label>Rua dos Pinheiros 610 - 3o andar - São Paulo / SP</label>
+                            </div>
                         </div>
                     </span>
                 </div>
                 <div class="col-md-12 col-xs-12">
-                    <div class="center">
-                       Copyright© 2017 - Vista Life - Todos os direitos reservados.
-                    </div>
+                    
                 </div>
                <!--  <div class="col-md-4 col-xs-5">
                     <div class="center">
@@ -317,6 +318,9 @@
 
                 A Vista Life dá muita importância para que as informações sejam transmitidas com qualidade, isenção e linguagem fácil, observando, no entanto, que não faz qualquer tipo de recomendação, indicação e/ou aconselhamento de investimento, não se responsabilizando por perdas, danos, custos e lucros cessantes.
             </div>
+            <div class="center">
+                       Copyright© 2017 - Vista Life - Todos os direitos reservados.
+            </div><br>
         </div>
 
     </body>
