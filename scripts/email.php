@@ -1,5 +1,5 @@
 <?php
-
+	header('Content-Type: application/json');
 	require_once(__DIR__."/recaptcha.php");
 	$secret = "6LeJBiAUAAAAAAThsWqlUVpNzdJBf4r9E14uBPpS";
 	$response = null;
@@ -10,11 +10,10 @@
 	        $_POST["g-recaptcha-response"]
 	    );
 	}
-	echo "<pre>";
-	print_r($response);
-	echo "</pre>";
 
-
+	if (!$response->success){
+		echo json_encode(array("status" => false, "message" => "RECAPTCHA inválido"));
+	}
 
 	$name = $_POST['name'];
 	$phone = $_POST['phone'];
@@ -36,5 +35,9 @@
 			."Telefone: $phone<br/>"
 			."Responder para: $_replyto<br/>"
 			."Mensagem: $message";
-	mail($to, $subject, $body, $headers);
+	if (mail($to, $subject, $body, $headers)){
+		echo json_encode(array("status" => true, "message" => "E-mail enviado com sucesso!"));
+	}else{
+		echo json_encode(array("status" => false, "message" => "Erro interno ao enviar o e-mail"));
+	}
 ?>
