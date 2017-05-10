@@ -5,6 +5,11 @@ function adaptMenu(windowObject){
 	}else{
 	  $(".vistalife-navbar").removeClass("vistalife-navbar-mobile vistalife-navbar-fixed");
 	}
+	if ($(windowObject).width() < 700){
+		$(".img-solution").attr("src", "/assets/img/solucao_mobile.png");
+	}else{
+		$(".img-solution").attr("src", "/assets/img/solucao.png");
+	}
 }
 
 var globalVal = 1;
@@ -19,7 +24,7 @@ function changeImage(pos, autoChange){
 	}else{
 		globalVal = pos;
 	}
-	$("header").css('background-image', "url(/wp-content/themes/blank-wordpress-theme/assets/img/background-"+globalVal+".jpg)");
+	$("header").css('background-image', "url(/assets/img/background-"+globalVal+".jpg)");
 	// $('header').fadeTo('slow', 0.3, function()
 	// {
 	// }).fadeTo('slow', 1);
@@ -41,6 +46,22 @@ $(document).ready(function(){
 		adaptMenu(this);
 
 	});
+
+	$(".contact-email").submit(function(e){
+		e.preventDefault();
+		$("#contato-answers").html("");
+		$.ajax({
+            type: $(this).attr('method'),
+            url: $(this).attr('action'),
+            data: $(this).serialize(),
+            success: function (data) {
+            	if (data.status){
+            		$("#contato-form").hide();
+            	}
+            	$("#contato-answers").html("<h2>"+data.message+"</h2>");
+            }
+        });
+	})
 
 	$(".left-pointer").click(function(e){
 		e.preventDefault();
@@ -83,10 +104,7 @@ $(document).ready(function(){
 	});
 
 	$(".act-letstalk").click(function(e){
-		// e.preventDefault();
-		// var anchor = document.querySelector('#contact-form-link');
-		// smoothScroll.animateScroll(anchor);
-		$("#contact-form-link").click();
+		$("#contato-link").click();
 	})
 
 	var contactFunction = function(object){
