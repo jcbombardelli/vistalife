@@ -70,8 +70,8 @@
             </section>
         </header>
 
-    <section class="container howItWorks centralized-content">
-        <div class="row" id="como-funciona">
+    <section class="container howItWorks centralized-content" id="como-funciona">
+        <div class="row" >
             <h2 class="titulo topCasaFina-title">COMO FUNCIONA</h2>
             <div class="col-md-3 col-xs-13">
                 <figure class="thumbnail">
